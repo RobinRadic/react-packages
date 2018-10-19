@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "scripts": {
+        "reinstall": "rimraf **/*/node_modules */node_modules package-lock.json yarn.lock yarn-error.log node_modules && yarn install",
+        "dev:build": "lerna run dev:build",
+        "prod:build": "lerna run prod:build",
+        "dev:watch": "lerna run dev:watch"
+    },
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ],
+        "nohoist2 ": [
+            "**/@codex/api",
+            "**/@codex/api/*"
+        ]
+    },
+    "resolutions2": {
+        "graphql": "0.13.2",
+        "**/graphql": "0.13.2",
+        "@codex/api/**/graphql": "0.13.2"
+    },
+    "dependencies": {
+        "@types/dotenv": "^4.0.3",
+        "@types/gulp": "^3.0.0",
+        "@types/node": "^10.11.0",
+        "dotenv": "^6.0.0",
+        "gulp": "^3.9.1",
+        "gulpclass": "^0.2.0",
+        "lerna": "^3.4.0",
+        "lodash": "^4.17.10",
+        "reflect-metadata": "^0.1.12",
+        "rimraf": "2.6.*",
+        "ts-node": "^7.0.0",
+        "typescript": "^3.0.1"
+    }
+}
