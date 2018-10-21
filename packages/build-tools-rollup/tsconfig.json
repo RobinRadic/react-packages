@@ -5,10 +5,11 @@
         "moduleResolution": "node",
         "sourceMap": true,
         "esModuleInterop": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "declaration": true,
+        "outDir": "./dist"
     },
     "include": [
-        "src",
-        "build-tools.config.ts"
+        "src"
     ]
 }

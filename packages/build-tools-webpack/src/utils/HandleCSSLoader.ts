@@ -1,14 +1,4 @@
 import autoprefixer from 'autoprefixer';
-import * as glob from 'glob';
-import * as path from 'path';
-import * as fs from 'fs';
-
-const AntdScssTheme = require('antd-scss-theme-plugin');
-const gzipSize      = require('gzip-size');
-const filesize      = require('filesize');
-
-// declare function _purify(content?: string | string[], css?: string | string[], options?: { output?: string, minify?: boolean, info?: boolean, rejected?: boolean }, cb?: (purifiedCSS: string) => void)
-// declare function _purify(content?: string | string[], css?: string | string[], cb?: (purifiedCSS: string) => void)
 
 export const postcss = [ autoprefixer() ]
 
@@ -137,7 +127,7 @@ export class HandleCSSLoader {
                 &&
                 (this.withRule && this.withRule.antd === true)
             ) {
-                use.push(AntdScssTheme.themify({
+                use.push(require('antd-scss-theme-plugin').themify({
                     loader,
                     options: {
                         ...options,
@@ -302,30 +292,3 @@ export class HandleCSSLoader {
     }
 }
 
-export function getSize(size) {
-    return (size / 1024).toFixed(2) + 'kb'
-}
-
-export const purify = async function (cssGlob: string, jsGlobs: string) {
-    const css       = glob.sync(cssGlob); //path.join(__dirname, '../prod/**/*.css'));
-    const js        = glob.sync(jsGlobs); //path.join(__dirname, '../prod/**/*.js'));
-    const purifycss = require('purify-css');
-    return Promise.all(css.map(function (file) {
-        return new Promise(function (resolve) {
-            purifycss(js, [ file ], { minify: true }, function (purified) {
-                const oldSize = fs.statSync(file).size;
-                fs.writeFileSync(file, purified)
-                const newSize = fs.statSync(file).size;
-
-                console.log(
-                    ` ${path.basename(file)} by ${((1 - newSize / oldSize) * 100).toFixed(2)}%\n`,
-                    `        from : ${filesize(oldSize)} \n`,
-                    `          to : ${filesize(newSize)} / ${filesize(gzipSize.sync(purified))}  (gzip)\n`,
-                    ``
-                )
-                resolve()
-            })
-        })
-    }))
-
-}

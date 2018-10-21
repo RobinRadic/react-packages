@@ -11,10 +11,9 @@
         "clean": "rm -rf dist/ ",
         "env:dev": "NODE_ENV=development",
         "env:prod": "NODE_ENV=production",
-        "dev:build": "npm-run-all env:dev clean build",
-        "prod:build": "npm-run-all env:prod clean build",
-        "dev:watch": "npm-run-all env:dev clean build",
-        "build": "gulp build"
+        "dev:build": "npm-run-all env:dev clean && gulp dev:build",
+        "prod:build": "npm-run-all env:prod clean && gulp prod:build",
+        "dev:watch": "npm-run-all env:dev clean && gulp dev:build"
     },
     "engines": {
         "node": ">=8",
@@ -25,6 +24,7 @@
     ],
     "dependencies": {
         "@radic/build-tools": "^1.0.0",
+        "@radic/build-tools-gulp": "^1.0.0",
         "@radic/build-tools-webpack": "^1.0.0"
     }
 }

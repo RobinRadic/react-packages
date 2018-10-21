@@ -4,7 +4,6 @@ import { merge } from 'lodash';
 import { Options } from 'ts-import-plugin/lib';
 import { LoaderOptions } from 'webpack-chain';
 import { resolve } from 'path';
-import * as ForkTsChecker from 'fork-ts-checker-webpack-plugin';
 
 const tsImportFactory = require('ts-import-plugin');
 
@@ -40,6 +39,7 @@ function addTypescriptLoader(chain: Chain, tsconfig?: string) {
         .include.add(chain.srcPath()).end()
         .exclude.add(/node_modules/).end()
         .use('ts-loader')
+        .loader('ts-loader')
         .options({
             logLevel       : 'info',
             logInfoToStdOut: true,
@@ -48,14 +48,16 @@ function addTypescriptLoader(chain: Chain, tsconfig?: string) {
             configFile     : tsconfig
         })
 
-    chain
-        .plugin('fork-ts-checkers')
-        .use(ForkTsChecker as any)
-        .init(ForkTsChecker => new ForkTsChecker({
-            async: false,
-            watch: chain.srcPath(),
-            tsconfig
-        }))
+
+
+    // chain
+    //     .plugin('fork-ts-checkers')
+    //     .use(ForkTsChecker as any)
+    //     .init(ForkTsChecker => new ForkTsChecker({
+    //         async: false,
+    //         watch: chain.srcPath(),
+    //         tsconfig
+    //     }))
 }
 
 function tapTypescriptLoaderOptions(chain: Chain, f: (options: LoaderOptions) => LoaderOptions) {
@@ -63,7 +65,7 @@ function tapTypescriptLoaderOptions(chain: Chain, f: (options: LoaderOptions) =>
 }
 
 function addBabelToTypescriptLoader(chain: Chain) {
-    chain.module.rules.get('ts').use('babel-loader').before('ts-loader').options({})
+    chain.module.rules.get('ts').use('babel-loader').loader('babel-loader').before('ts-loader').options({})
 }
 
 function addTypescriptImportFactories(chain: Chain, factories: Options[]) {

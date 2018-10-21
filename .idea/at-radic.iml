@@ -10,9 +10,13 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-rollup/src" isTestSource="false" packagePrefix="@radic/build-tools-rollup" />
       <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-webpack/src" isTestSource="false" packagePrefix="@radic/build-tools-webpack" />
       <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/src" isTestSource="false" packagePrefix="@radic/build-tools-gulp" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/generator-radic/src" isTestSource="false" packagePrefix="generator-radic" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-rollup/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-webpack/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/generators" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/lib" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/example" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/dist" />

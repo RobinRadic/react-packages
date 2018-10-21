@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "outDir": "./",
+        "declarationDir": "./types",
+        "target": "es6",
+        "lib": ["es2017", "dom"],
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "allowJs": false,
+        "inlineSources": true,
+        "declaration": true,
+        "pretty": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "allowUnreachableCode": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./types",
+        "./*.ts",
+        "*.js"
+    ],
+    "compileOnSave": true
+}

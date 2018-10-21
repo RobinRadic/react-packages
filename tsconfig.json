@@ -13,13 +13,13 @@
         "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": false,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": false,
+        "esModuleInterop": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "jsx": "preserve"
     },
     "include": [
-//        "packages",
+        //        "packages",
         "gulpfile.ts",
         "test.ts"
     ]

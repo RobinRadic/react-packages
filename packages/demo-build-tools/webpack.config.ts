@@ -1,5 +1,6 @@
 import { initBase, initLoaders, initPlugins } from '@radic/build-tools-webpack'
 import { resolve } from 'path';
+const ForkTsChecker = require('fork-ts-checker-webpack-plugin');
 
 
 const chain = initBase({
@@ -11,7 +12,8 @@ const chain = initBase({
 const loaders = initLoaders(chain);
 loaders.extendGlobalBabelOptions({ plugins: [ 'react-app' ] })
 loaders.addJavascriptLoader(chain);
-loaders.addTypescriptLoader(chain, resolve('tsconfig.json'));
+let tsconfig = resolve('tsconfig.json');
+loaders.addTypescriptLoader(chain, tsconfig);
 loaders.addBabelToTypescriptLoader(chain)
 loaders.addTypescriptImportFactories(chain, [
     { libraryName: 'antd', libraryDirectory: 'es', style: true },
@@ -33,4 +35,9 @@ plugins.addAnalyzerPlugins(chain, chain.isProd)
 plugins.addCleanPlugin(chain)
 
 const config = chain.toConfig();
+config.plugins.push(new ForkTsChecker({
+    async: false,
+    watch: resolve('theme'),
+    tsconfig
+}))
 export { chain, config }

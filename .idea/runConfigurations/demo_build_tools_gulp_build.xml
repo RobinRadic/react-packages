@@ -1,5 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="demo-build-tools gulp build" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="build" node-parameters="-r ts-node/register --nolazy" path-to-js-file="../../node_modules/.bin/gulp" working-dir="$PROJECT_DIR$/packages/demo-build-tools">
-    <method v="2" />
-  </configuration>
-</component>

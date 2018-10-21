@@ -10,7 +10,7 @@
         "packages": [
             "packages/*"
         ],
-        "nohoist ": [
+        "nohoist": [
             "**/@radic/build-tools-webpack",
             "**/@radic/build-tools-webpack/**"
         ]

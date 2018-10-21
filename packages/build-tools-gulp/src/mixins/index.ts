@@ -1,3 +1,2 @@
-export class GulpEnvMixin {
+export * from './GulpEnvMixin'
 
-}

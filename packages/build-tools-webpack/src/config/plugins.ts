@@ -1,11 +1,11 @@
-import * as webpack from 'webpack';
-import * as WriteFile from 'write-file-webpack-plugin';
-import * as FriendlyErrors from 'friendly-errors-webpack-plugin';
-import * as WebpackBar from 'webpackbar'
-import * as Clean from 'clean-webpack-plugin'
+import webpack from 'webpack';
+import WriteFile from 'write-file-webpack-plugin';
+import FriendlyErrors from 'friendly-errors-webpack-plugin';
+import WebpackBar from 'webpackbar'
+import Clean from 'clean-webpack-plugin'
 import OptimizeCss from 'optimize-css-assets-webpack-plugin';
-import * as MiniCssExtract from 'mini-css-extract-plugin'
-import * as VisualizerPlugin from 'webpack-visualizer-plugin'
+import MiniCssExtract from 'mini-css-extract-plugin'
+import VisualizerPlugin from 'webpack-visualizer-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { Chain } from './Chain';
 import { BundleSizeAnalyzerPlugin } from '../plugins';
