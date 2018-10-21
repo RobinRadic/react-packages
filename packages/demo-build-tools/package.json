@@ -1,0 +1,30 @@
+{
+    "name": "@radic/demo-build-tools",
+    "private": true,
+    "license": "MIT",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "jsnext:main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf dist/ ",
+        "env:dev": "NODE_ENV=development",
+        "env:prod": "NODE_ENV=production",
+        "dev:build": "npm-run-all env:dev clean build",
+        "prod:build": "npm-run-all env:prod clean build",
+        "dev:watch": "npm-run-all env:dev clean build",
+        "build": "gulp build"
+    },
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@radic/build-tools": "^1.0.0",
+        "@radic/build-tools-webpack": "^1.0.0"
+    }
+}

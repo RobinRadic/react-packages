@@ -10,9 +10,9 @@
         "packages": [
             "packages/*"
         ],
-        "nohoist2 ": [
-            "**/@codex/api",
-            "**/@codex/api/*"
+        "nohoist ": [
+            "**/@radic/build-tools-webpack",
+            "**/@radic/build-tools-webpack/**"
         ]
     },
     "resolutions2": {
