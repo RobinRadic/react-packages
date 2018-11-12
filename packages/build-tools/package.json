@@ -6,6 +6,9 @@
     "module": "dist/index.js",
     "jsnext:main": "dist/index.js",
     "typings": "dist/index.d.ts",
+    "author": {
+        "name": "Robin Radic"
+    },
     "scripts": {
         "clean": "rm -rf dist/ ",
         "env:dev": "NODE_ENV=development",

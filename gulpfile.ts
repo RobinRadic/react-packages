@@ -30,7 +30,7 @@ export class Gulpfile {
     @Task('package-graph')
     async mergeJson() {
         this.dev();
-        let $grap = new PackageGraph(require('./package.json'))
+        let $grap = new PackageGraph((await this.getPackages()).map(pkg => pkg.pkg))
 
     }
 
