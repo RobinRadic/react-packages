@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="generator-radic test.ts" type="NodeJSConfigurationType" factoryName="Node.js" node-parameters="-r ts-node/register --nolazy" path-to-js-file="$PROJECT_DIR$/packages/generator-radic/src/test.ts" working-dir="$PROJECT_DIR$/packages/generator-radic">
+    <method v="2" />
+  </configuration>
+</component>

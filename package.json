@@ -2,17 +2,24 @@
     "private": true,
     "scripts": {
         "reinstall": "rimraf **/*/node_modules */node_modules package-lock.json yarn.lock yarn-error.log node_modules && yarn install",
+        "gulp": "gulp",
+        "lerna": "lerna",
         "dev:build": "lerna run dev:build",
         "prod:build": "lerna run prod:build",
         "dev:watch": "lerna run dev:watch"
     },
     "workspaces": {
         "packages": [
+            "apps/*",
             "packages/*"
         ],
         "nohoist": [
-            "**/@radic/build-tools-webpack",
-            "**/@radic/build-tools-webpack/**"
+            "react-site/babel-polyfill",
+            "react-site/antd",
+            "react-site/@types/**",
+            "**/react-site",
+            "**/react-site/**",
+            "@radic/build-tools-webpack/babel-polyfill"
         ]
     },
     "resolutions2": {

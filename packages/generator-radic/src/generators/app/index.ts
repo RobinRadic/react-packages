@@ -16,7 +16,7 @@ class AppGenerator extends Generator {
     writing() {
         this.log('method 1 just ran', this.determineAppname());
         this.answers.generators.forEach(name => {
-            this.composeWith('radical:' + name, {});
+            this.composeWith('radic:' + name, {});
         })
     }
 

@@ -49,7 +49,6 @@ function addTypescriptLoader(chain: Chain, tsconfig?: string) {
         })
 
 
-
     // chain
     //     .plugin('fork-ts-checkers')
     //     .use(ForkTsChecker as any)
@@ -65,7 +64,7 @@ function tapTypescriptLoaderOptions(chain: Chain, f: (options: LoaderOptions) =>
 }
 
 function addBabelToTypescriptLoader(chain: Chain) {
-    chain.module.rules.get('ts').use('babel-loader').loader('babel-loader').before('ts-loader').options({})
+    chain.module.rule('ts').use('babel-loader').loader('babel-loader').before('ts-loader').options(babelOptions);
 }
 
 function addTypescriptImportFactories(chain: Chain, factories: Options[]) {
@@ -105,6 +104,7 @@ export function initLoaders(chain: Chain) {
 
 
 //region:style loaders
+//
 // const styleLoaders   = new HandleCSSLoader({
 //     styleLoader: 'style-loader',
 //     sourceMap  : isProd,
@@ -129,9 +129,6 @@ export function initLoaders(chain: Chain) {
 // };
 // const a              = 'a';
 // Object.keys(styleLoaderMap).forEach(key => chain.module.rule(key).merge(styleLoaderMap[ key ]))
-//endregion
-
-//region:asset loaders
 // chain.addLoader('fonts', 'file-loader', {
 //     name      : '[name].[ext]',
 //     publicPath: `/fonts/`,

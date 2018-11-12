@@ -1,6 +1,7 @@
 import BaseConfig, { LoaderOptions } from 'webpack-chain';
 import { resolve } from 'path';
 import { get, has, merge, set, unset } from 'lodash';
+import { Configuration } from 'webpack';
 
 export class ChainData {
     constructor(protected _data = {}) {}
@@ -42,6 +43,23 @@ export class Chain extends BaseConfig {
 
     addLoader = (ruleName: string, loaderName: string, options: LoaderOptions = {}) => this.module.rule(ruleName).use(loaderName).loader(loaderName).options(options).end()
     getLoader = (ruleName: string, loaderName: string) => this.module.rules.get(ruleName).uses.get(loaderName)
+
+    toConfigHandlers = [];
+
+    onToConfig(handler: (this: this, config?: Configuration) => Configuration) {
+        this.toConfigHandlers.push(handler);
+        return this;
+    }
+
+    public toConfig(): Configuration {
+        let config = super.toConfig();
+        if ( this.toConfigHandlers ) {
+            this.toConfigHandlers.forEach(handler => {
+                config = handler(config)
+            })
+        }
+        return config;
+    }
 }
 
 export interface InitBaseOptions {

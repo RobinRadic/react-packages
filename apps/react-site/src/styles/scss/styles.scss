@@ -1,0 +1,21 @@
+@import "variables";
+
+@import "~font-awesome/scss/font-awesome";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+.reactive-content {
+    @import "~bootstrap/scss/nav";
+    @import "~bootstrap/scss/navbar";
+    @import "~bootstrap/scss/grid";
+    @import "~bootstrap/scss/card";
+    @import "~bootstrap/scss/button-group";
+    @import "~bootstrap/scss/buttons";
+    @import "~bootstrap/scss/forms";
+
+    .card {
+        border: none !important;
+    }
+}

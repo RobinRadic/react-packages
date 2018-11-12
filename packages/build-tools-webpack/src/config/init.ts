@@ -1,7 +1,7 @@
 import { merge } from 'lodash';
 import { Chain, InitBaseOptions } from './Chain';
 
-export function initBase(options: InitBaseOptions) {
+export function initBase(options: InitBaseOptions): Chain {
     options = merge({}, options, <InitBaseOptions>{
         sourceDir: 'src',
         outputDir: options.mode === 'development' ? 'dev' : 'dist',
@@ -18,7 +18,7 @@ export function initBase(options: InitBaseOptions) {
         .node.merge({ setImmediate: false, dgram: 'empty', fs: 'empty', net: 'empty', tls: 'empty', child_process: 'empty' }).end();
 
     chain.entry(options.entryName)
-        .add(require.resolve('babel-polyfill'))
+        .add('babel-polyfill')
         .add(chain.srcPath(options.entryFileName));
 
     chain.output

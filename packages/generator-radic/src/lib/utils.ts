@@ -1,10 +1,15 @@
-import * as _npm from 'npm';
+///<reference path="../globals.d.ts"/>
+
+import * as requireg from 'requireg'
+
+const _npm: NPM.Static = requireg('npm')
 
 interface CommandFunction {
     (args: string[], callback: NPM.CommandCallback): void;
 
     (args: string[], silent: boolean, callback: NPM.CommandCallback): void;
 }
+
 
 type Commands<T = NPM.Commands> = {
     readonly [P in keyof T]: CommandFunction;
@@ -25,5 +30,10 @@ export function npm(command: keyof NPM.Commands, npmArgs: string[] = [], silent:
 
 export async function getLatestVersion(packageName: string) {
     let view = await npm('view', [ packageName ])
-    return view[ Object.keys(view)[ 0 ] ].version;
+    let key = Object.keys(view[ 0 ]);
+    try {
+        return view[ 0 ][ key ][ 'dist-tags' ][ 'latest' ];
+    } catch {
+        return key;
+    }
 }
