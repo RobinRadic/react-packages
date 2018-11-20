@@ -21,6 +21,7 @@ const exec                           = (cmd: string, options: Partial<ExecSyncOp
 const execAll                        = (cmds: string[], options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => cmds.forEach(cmd => exec(cmd, options))
 const execAllPrefix                  = (prefix: string, cmds: string[], options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => cmds.forEach(cmd => exec(prefix + cmd, options))
 const cmds: Record<string, Function> = {};
+cmds.exec                             = (name: string, scope?: string) => exec(`yarn lerna exec ${name} ${scope ? '--scope=' + scope : ''}`)
 cmds.run                             = (name: string, scope?: string) => exec(`yarn lerna run ${name} ${scope ? '--scope=' + scope : ''}`)
 cmds.build                           = (env: 'dev' | 'prod', name: string) => exec(`yarn lerna run ${env}:build --scope=${name}`)
 cmds.buildTools                      = () => execAllPrefix('yarn lerna run prod:build --scope=', [ '@radic/build-tools', '@radic/build-tools-gulp', '@radic/build-tools-rollup', '@radic/build-tools-webpack' ])
@@ -97,7 +98,9 @@ export class Gulpfile {
             if ( task === 'publish' ) {
                 let force = await this.ask<boolean>('Force publish ' + pkg.name, 'confirm', { default: false })
                 await this.publishPackage(pkg, force);
-                cb();
+            }
+            if ( task === 'build' ) {
+                cmds.run('prod:build', pkg.name)
             }
         })
     }
@@ -106,7 +109,7 @@ export class Gulpfile {
         let cmd = 'npm whoami';
         if ( force ) { cmd += ' --force'; }
         // exec(cmd, { cwd: pkg.path });
-        cmds.run('publish', pkg.name)
+        cmds.exec('publish', pkg.name)
     }
 
     protected async ask<T>(message: string, type: string = 'input', options: Question = {}): Promise<T> {
