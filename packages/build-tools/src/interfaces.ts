@@ -66,6 +66,10 @@ export interface IPackageJSONScriptsMap {
     [ scriptName: string ]: string;
 }
 
+export interface IPackageJSONWorkspaces {
+    packages:string[]
+    nohoist:string[]
+}
 export interface IPackageJSON extends Object {
 
     [ key: string ]: any
@@ -127,4 +131,7 @@ export interface IPackageJSON extends Object {
 
     readonly publishConfig?: IPackageJSONPublishConfig;
 
+    readonly workspaces?:IPackageJSONWorkspaces | string[]
+
+    readonly resolutions?:IPackageJSONDependencyMap
 }

@@ -29,5 +29,11 @@
         "@types/gulp": "^3.0.0",
         "gulp": "^3.9.1",
         "gulpclass": "^0.2.0"
+    },
+    "devDependencies": {
+        "@types/inquirer": "^0.0.43"
+    },
+    "peerDependencies": {
+        "inquirer": "^6.2.0"
     }
 }
