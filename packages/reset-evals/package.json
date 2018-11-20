@@ -1,5 +1,5 @@
 {
-    "name": "reset-evals",
+    "name": "@radic/reset-evals",
     "license": "MIT",
     "version": "1.0.0",
     "main": "dist/index.js",
