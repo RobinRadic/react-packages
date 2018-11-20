@@ -20,6 +20,7 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/generators" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/lib" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/types" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/reset-evals/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/example" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/dist" />
