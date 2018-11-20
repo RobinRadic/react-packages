@@ -1,9 +1,9 @@
-# Webpack Build Tools
+# Monorepo Build Tools
 
 ## Install
 
 ```bash
-npm install --save @radic/build-tools-webpack
+npm install --save @radic/build-tools-monorepo
 ```
 
 ## License

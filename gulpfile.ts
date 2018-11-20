@@ -21,7 +21,7 @@ const exec                           = (cmd: string, options: Partial<ExecSyncOp
 const execAll                        = (cmds: string[], options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => cmds.forEach(cmd => exec(cmd, options))
 const execAllPrefix                  = (prefix: string, cmds: string[], options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => cmds.forEach(cmd => exec(prefix + cmd, options))
 const cmds: Record<string, Function> = {};
-cmds.exec                             = (name: string, scope?: string) => exec(`yarn lerna exec ${name} ${scope ? '--scope=' + scope : ''}`)
+cmds.exec                            = (name: string, scope?: string) => exec(`yarn lerna exec ${name} ${scope ? '--scope=' + scope : ''}`)
 cmds.run                             = (name: string, scope?: string) => exec(`yarn lerna run ${name} ${scope ? '--scope=' + scope : ''}`)
 cmds.build                           = (env: 'dev' | 'prod', name: string) => exec(`yarn lerna run ${env}:build --scope=${name}`)
 cmds.buildTools                      = () => execAllPrefix('yarn lerna run prod:build --scope=', [ '@radic/build-tools', '@radic/build-tools-gulp', '@radic/build-tools-rollup', '@radic/build-tools-webpack' ])
@@ -47,15 +47,56 @@ export class Gulpfile {
 
     @Task('build:react-site') buildReactSite() { cmds.buildReactSite(); }
 
-    @Task('publish')
-    async publish() {
-        let packages = await this.selectPackages();
+    @Task('build')
+    async build(packages?: Package[]) {
+        if(!Array.isArray(packages)) {
+            packages = await this.selectPackages(true);
+        }
+        console.dir(packages);
+        each(packages, async (pkg, cb) => {
+            await this.buildPackage(pkg);
+            cb();
+        })
+    }
 
-        packages.forEach(pkg => {
-            try {
-                exec('npm publish', { cwd: pkg.path });
-            } catch {}
-        });
+    @Task('publish')
+    async publish(packages?: Package[]) {
+        packages    = packages || await this.selectPackages(true);
+        let choices = [ 'no', 'all', 'ask' ];
+        let forceOn = await this.ask<string>('Force publish on', 'list', { choices, default: 'no' })
+        return new Promise((res, rej) => each(packages, async (pkg, cb) => {
+            let force = forceOn === 'all';
+            if ( forceOn === 'ask' ) {
+                force = await this.ask<boolean>('Force publish ' + pkg.name, 'confirm', { default: false })
+            }
+            await this.publishPackage(pkg, force);
+            cb();
+        }, err => err ? rej(err) : res()))
+    }
+
+    @Task('pick')
+    @Task('default')
+    async pick() {
+        let choices  = [ 'build', 'publish', 'test' ];
+        let task     = await this.ask('Select option', 'list', { choices });
+        let packages = await this.selectPackages(true);
+
+        if ( task === 'build' ) {
+            await this.build(packages);
+        } else if ( task === 'publish' ) {
+            await this.publish(packages);
+        }
+    }
+
+    protected async publishPackage(pkg: Package, force: boolean = false) {
+        let cmd = 'npm publish';
+        if ( force ) { cmd += ' --force'; }
+        exec(cmd, { cwd: pkg.path, uid: process.getuid(), gid: process.getgid(), stdio: 'inherit' });
+        // cmds.exec(cmd, pkg.name)
+    }
+
+    protected async buildPackage(pkg: Package, cmd: string = 'prod:build') {
+        cmds.run(cmd, pkg.name)
     }
 
     protected async getPackages(): Promise<{ path: string, pkg: any }[]> {
@@ -86,30 +127,6 @@ export class Gulpfile {
             name,
             path: pkgs.find(pkg => pkg.pkg.name === name).path
         })) : [ packages ];
-    }
-
-    @Task('pick')
-    async pick() {
-        let choices  = [ 'build', 'publish', 'test' ];
-        let task     = await this.ask('Select option', 'list', { choices });
-        let packages = await this.selectPackages(true);
-
-        each(packages, async (pkg, cb) => {
-            if ( task === 'publish' ) {
-                let force = await this.ask<boolean>('Force publish ' + pkg.name, 'confirm', { default: false })
-                await this.publishPackage(pkg, force);
-            }
-            if ( task === 'build' ) {
-                cmds.run('prod:build', pkg.name)
-            }
-        })
-    }
-
-    protected publishPackage(pkg: Package, force: boolean = false) {
-        let cmd = 'npm whoami';
-        if ( force ) { cmd += ' --force'; }
-        // exec(cmd, { cwd: pkg.path });
-        cmds.exec('publish', pkg.name)
     }
 
     protected async ask<T>(message: string, type: string = 'input', options: Question = {}): Promise<T> {

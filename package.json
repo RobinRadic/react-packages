@@ -4,6 +4,8 @@
         "reinstall": "rimraf **/*/node_modules */node_modules package-lock.json yarn.lock yarn-error.log node_modules && yarn install",
         "gulp": "gulp",
         "lerna": "lerna",
+        "build": "gulp build",
+        "prepublish": "gulp publish && exit 1;",
         "dev:build": "lerna run dev:build",
         "prod:build": "lerna run prod:build",
         "dev:watch": "lerna run dev:watch"

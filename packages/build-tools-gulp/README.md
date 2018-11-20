@@ -1,18 +1,10 @@
-# Typestyled Components
-
-> test
-
-[![NPM](https://img.shields.io/npm/v/typestyled-components.svg)](https://www.npmjs.com/package/test-lib) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# Gulp Build Tools
 
 ## Install
 
 ```bash
-npm install --save @radic/typestyled-components
+npm install --save @radic/build-tools-gulp
 ```
-
-## Usage
-
-Check the **examples** directory
 
 ## License
 
