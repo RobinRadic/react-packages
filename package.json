@@ -44,5 +44,9 @@
         "rimraf": "2.6.*",
         "ts-node": "^7.0.0",
         "typescript": "^3.0.1"
+    },
+    "devDependencies": {
+        "@types/async": "^2.0.50",
+        "async": "^2.6.1"
     }
 }

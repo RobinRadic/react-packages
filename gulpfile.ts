@@ -7,7 +7,11 @@ import * as inquirer from 'inquirer';
 import { Question } from 'inquirer';
 import * as glob from 'glob';
 import { dirname, resolve } from 'path';
+import { mixin } from './packages/build-tools/src/decorators/mixin';
+import { GulpEnvMixin } from './packages/build-tools-gulp/src/mixins/GulpEnvMixin';
+import { each } from 'async';
 
+type Package = { name: string, path: string }
 const exec                           = (cmd: string, options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => {
     execSync(cmd, merge(<ExecSyncOptionsWithStringEncoding>{
         encoding: 'utf8',
@@ -23,8 +27,10 @@ cmds.buildTools                      = () => execAllPrefix('yarn lerna run prod:
 cmds.buildGenerator                  = () => cmds.run('build', 'generator-radic')
 cmds.buildReactSite                  = (env: 'dev' | 'prod' = 'dev') => cmds.run(env + ':build', 'react-site')
 
+export interface Gulpfile extends GulpEnvMixin {}
 
 @Gulpclass(gulp)
+@mixin(GulpEnvMixin)
 export class Gulpfile {
 
     @Task('package-graph')
@@ -47,22 +53,8 @@ export class Gulpfile {
         packages.forEach(pkg => {
             try {
                 exec('npm publish', { cwd: pkg.path });
-            } catch{}
+            } catch {}
         });
-    }
-
-    protected dev() {
-        process.env.NODE_ENV = 'development'
-        // setSettingEnv('dev')
-        // this.settings = getSettings();
-        return this;
-    }
-
-    protected dist() {
-        process.env.NODE_ENV = 'production'
-        // setSettingEnv('dist')
-        // this.settings = getSettings();
-        return this;
     }
 
     protected async getPackages(): Promise<{ path: string, pkg: any }[]> {
@@ -79,17 +71,47 @@ export class Gulpfile {
         });
     }
 
-    protected async selectPackages(): Promise<{ name: string, path: string }[]> {
-        let pkgs    = await this.getPackages()
-        let names   = pkgs.map(pkg => pkg.pkg.name);
-        let answers = await inquirer.prompt<{
-            packages: string[]
-        }>([
-            { name: 'packages', type: 'checkbox', choices: names } as Question
-        ])
-        return answers.packages.map(name => ({
+    protected async getPackage(name: string): Promise<{ path: string, pkg: any }> {
+        let pkgs = await this.getPackages()
+        return pkgs.find(pkg => pkg.pkg.name === name);
+    }
+
+    protected async selectPackages(multi: boolean = true): Promise<Package[]> {
+        let pkgs     = await this.getPackages()
+        let choices  = pkgs.map(pkg => pkg.pkg.name);
+        let packages = await this.ask<any>('Select packages', multi ? 'checkbox' : 'list', { choices })
+
+        return multi ? packages.map(name => ({
             name,
             path: pkgs.find(pkg => pkg.pkg.name === name).path
-        }))
+        })) : [ packages ];
+    }
+
+    @Task('pick')
+    async pick() {
+        let choices  = [ 'build', 'publish', 'test' ];
+        let task     = await this.ask('Select option', 'list', { choices });
+        let packages = await this.selectPackages(true);
+
+        each(packages, async (pkg, cb) => {
+            if ( task === 'publish' ) {
+                let force = await this.ask<boolean>('Force publish ' + pkg.name, 'confirm', { default: false })
+                await this.publishPackage(pkg, force);
+                cb();
+            }
+        })
+    }
+
+    protected publishPackage(pkg: Package, force: boolean = false) {
+        let cmd = 'npm whoami';
+        if ( force ) { cmd += ' --force'; }
+        // exec(cmd, { cwd: pkg.path });
+        cmds.run('publish', pkg.name)
+    }
+
+    protected async ask<T>(message: string, type: string = 'input', options: Question = {}): Promise<T> {
+        options     = { name: 'question', message, type, ...options }
+        let answers = await inquirer.prompt(options);
+        return answers[ options.name ];
     }
 }
