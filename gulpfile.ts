@@ -6,7 +6,8 @@ import { merge } from 'lodash';
 import { mixin, utils } from './packages/build-tools';
 import { GulpEnvMixin, GulpInteractiveMixin } from './packages/build-tools-gulp';
 import { Monorepo, Package } from './packages/build-tools-monorepo';
-import { each } from 'async';
+
+const each = <T>(items: T[], fn: (item:T) => void) => items.reduce((promise, item) => promise.then(() => fn(item)), Promise.resolve());
 
 const monorepo                       = new Monorepo({ cwd: __dirname });
 const exec                           = (cmd: string, options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => {
@@ -63,18 +64,18 @@ export class Gulpfile {
 
     protected async versionPackages(packages?: Package[]) {
         packages = packages || await this.selectPackages(true);
-        each(packages, async (pkg, cb) => {
+        each(packages, async (pkg) => {
             let choice = await this.list(`Select a new version for ${pkg.name} (currently ${pkg.version}) `, utils.getVersionBumpChoices(pkg.version));
             pkg.extend({ version: choice }).write();
-            cb();
+            // cb();
         });
     }
 
     protected async buildPackages(packages?: Package[]) {
         packages = packages || await this.selectPackages(true);
-        each(packages, async (pkg, cb) => {
+        each(packages, async (pkg) => {
             await this.buildPackage(pkg);
-            cb();
+            // cb();
         })
     }
 
@@ -83,13 +84,13 @@ export class Gulpfile {
         packages    = packages || await this.selectPackages(true);
         let choices = [ 'no', 'all', 'ask' ];
         let forceOn = await this.list('Force publish on', choices, { default: 'no' })
-        each(packages, async (pkg, cb) => {
+        each(packages, async (pkg) => {
             let force = forceOn === 'all';
             if ( forceOn === 'ask' ) {
                 force = await this.confirm('Force publish ' + pkg.name, false)
             }
             await this.publishPackage(pkg, force);
-            cb();
+            // cb();
         })
     }
 

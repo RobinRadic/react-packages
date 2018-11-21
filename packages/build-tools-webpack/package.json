@@ -1,7 +1,7 @@
 {
     "name": "@radic/build-tools-webpack",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "jsnext:main": "dist/index.js",
@@ -26,7 +26,7 @@
         "@radic/build-tools": "^1.0.0"
     },
     "dependencies": {
-        "@types/webpack-chain":"^4.8.1",
+        "@types/webpack-chain": "^4.8.1",
         "@types/autoprefixer": "6.7.*",
         "@types/babel-core": "^6.25.5",
         "@types/chance": "^1.0.0",
