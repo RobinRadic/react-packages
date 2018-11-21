@@ -35,7 +35,7 @@ export class Monorepo {
         if ( this.useLerna && ! this.lernaConfig.useWorkspaces ) {
             return this.lernaConfig.packages;
         }
-        return Array.isArray(this.packageConfig.workspaces.packages) ? this.packageConfig.workspaces.packages : this.packageConfig.workspaces as any;
+        return Array.isArray(this.packageConfig.workspaces['packages']) ? this.packageConfig.workspaces['packages'] : this.packageConfig.workspaces as any;
     }
 
     get packages(): Package[] {
