@@ -1,11 +1,11 @@
-import * as inquirer from 'inquirer';
-import { Question } from 'inquirer';
+import { Inquirer, Question } from 'inquirer';
 
 export class GulpInteractiveMixin {
+    private get inquirer(): Inquirer { return require('inquirer')}
+
     protected async inquire<T>(message: string, type: string = 'input', options: Question = {}): Promise<T> {
         options     = { name: 'question', message, type, ...options }
-        let answers = await inquirer.prompt(options);
-
+        let answers = await this.inquirer.prompt(options);
         return answers.question;
     }
 
@@ -14,9 +14,7 @@ export class GulpInteractiveMixin {
     }
 
     protected async confirm(message: string, defaultValue: boolean = false, options: Question = {}) {
-
         return await this.inquire<boolean>(message, 'confirm', { default: defaultValue, ...options })
-
     }
 
     protected async checkbox(message: string, choices: Question['choices'], options: Question = {}) {

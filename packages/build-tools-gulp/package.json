@@ -1,7 +1,7 @@
 {
     "name": "@radic/build-tools-gulp",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "jsnext:main": "dist/index.js",
@@ -28,12 +28,8 @@
         "typescript": "^3.1.3",
         "@types/gulp": "^3.0.0",
         "gulp": "^3.9.1",
-        "gulpclass": "^0.2.0"
-    },
-    "devDependencies": {
-        "@types/inquirer": "^0.0.43"
-    },
-    "peerDependencies": {
+        "@types/inquirer": "^0.0.43",
+        "gulpclass": "^0.2.0",
         "inquirer": "^6.2.0"
     }
 }

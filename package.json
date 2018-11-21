@@ -24,10 +24,9 @@
             "@radic/build-tools-webpack/babel-polyfill"
         ]
     },
-    "resolutions2": {
-        "graphql": "0.13.2",
-        "**/graphql": "0.13.2",
-        "@codex/api/**/graphql": "0.13.2"
+    "resolutions": {
+        "trucolor": "^0.7.1",
+        "term-ng": "^0.8.1"
     },
     "dependencies": {
         "@types/dotenv": "^4.0.3",

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
+<module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -12,19 +12,22 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/src" isTestSource="false" packagePrefix="@radic/build-tools-gulp" />
       <sourceFolder url="file://$MODULE_DIR$/packages/generator-radic/src" isTestSource="false" packagePrefix="generator-radic" />
       <sourceFolder url="file://$MODULE_DIR$/apps/react-site/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/reset-evals/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/src" isTestSource="false" packagePrefix="@radic/build-tools-monorepo" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/reset-evals/src" isTestSource="false" packagePrefix="@radic/reset-evals" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/src" isTestSource="false" packagePrefix="@radic/console-colors" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/apps/react-site/dev" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-rollup/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-webpack/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/console-colors/.nyc_output" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/console-colors/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/generators" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/lib" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/types" />
       <excludeFolder url="file://$MODULE_DIR$/packages/reset-evals/dist" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/reset-evals/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/example" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/dist" />

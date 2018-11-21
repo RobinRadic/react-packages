@@ -1,6 +1,7 @@
-.nyc_output
 .vscode
 generated
+dist
+dev
 
 # Node
 node_modules
@@ -9,4 +10,8 @@ lerna-debug.log
 package-lock.json
 yarn-error.log
 
-.env
+# Sass
+.sass-cache/
+
+.awcache
+.rpt2_cache

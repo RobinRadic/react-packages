@@ -1,6 +1,7 @@
 import * as Base from 'yeoman-generator';
 import { Ask } from './Ask';
 import { execSync, ExecSyncOptionsWithStringEncoding } from 'child_process';
+import { Question } from 'inquirer';
 
 export interface Priorities {
     // initializing?: Function //() => any // - Your initialization methods (checking current project state, getting configs, etc)
@@ -13,16 +14,38 @@ export interface Priorities {
     // end?: () => any // - Called last, cleanup, say good bye, etc
 }
 
-export abstract class Generator extends Base  {
+export abstract class Generator extends Base {
     private _ask = new Ask(this)
     public get ask(): Ask {return this._ask}
 
-    protected exec(cmd:string, options?:ExecSyncOptionsWithStringEncoding){
+    protected exec(cmd: string, options?: ExecSyncOptionsWithStringEncoding) {
         return execSync(cmd, {
-            cwd: this.destinationPath(),
+            cwd     : this.destinationPath(),
             encoding: 'utf8',
             ...options
         })
+    }
+
+    protected async inquire<T>(message: string, type: string = 'input', options: Question = {}): Promise<T> {
+        options     = { name: 'question', message, type, ...options }
+        let answers = await this.prompt([ options ]);
+        return answers.question;
+    }
+
+    protected async input(message: string, defaultValue?: string, options: Question = {}) {
+        return await this.inquire<boolean>(message, 'input', { default: defaultValue, ...options })
+    }
+
+    protected async confirm(message: string, defaultValue: boolean = false, options: Question = {}) {
+        return await this.inquire<boolean>(message, 'confirm', { default: defaultValue, ...options })
+    }
+
+    protected async checkbox(message: string, choices: Question['choices'], options: Question = {}) {
+        return await this.inquire<string[]>(message, 'checkbox', { choices, ...options })
+    }
+
+    protected async list(message: string, choices: Question['choices'], options: Question = {}) {
+        return await this.inquire<string>(message, 'list', { choices, ...options })
     }
 }
 

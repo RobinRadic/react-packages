@@ -59,23 +59,23 @@ class NodeGenerator extends Generator {
         await this._addDevDependency('ts-node')
 
         this.fs.extendJSON(this.destinationPath('tsconfig.json'), {
-            compilerOptions: <ts.CompilerOptions> {
-                target                : ts.ScriptTarget.ES5,
-                module                : ts.ModuleKind.CommonJS,
-                moduleResolution      : ts.ModuleResolutionKind.NodeJs,
-                lib                   : [ 'es2017' ],
+            compilerOptions: <ts.CompilerOptions | any> {
+                target                : 'es5',
+                module                : 'commonjs',
+                moduleResolution      : 'node',
+                lib                   : [ 'es2015', 'es2016', 'es2017' ],
                 emitDecoratorMetadata : true,
                 experimentalDecorators: true,
                 inlineSourceMap       : true,
-                typeRoots: [
-                    "node_modules/@types",
-                    "types"
+                typeRoots             : [
+                    'node_modules/@types',
+                    'types'
                 ]
             },
-            include: [
-                "src/**/*",
-                "test/**/*",
-                "types"
+            include        : [
+                'src/**/*',
+                'test/**/*',
+                'types'
             ]
         });
 

@@ -3,13 +3,13 @@ import Generator from '../../lib/Generator';
 
 class AppGenerator extends Generator {
 
-    protected answers:{
-        generators:string[]
+    protected answers: {
+        generators: string[]
     }
 
-    async prompting(){
+    async prompting() {
         this.answers = await this
-            .ask.checkbox('generators', 'Select generators to run', ['node', 'git'])
+            .ask.checkbox('generators', 'Select generators to run', [ 'node', 'git', 'build-tools' ])
             .ask.prompt() as any;
     }
 
@@ -21,4 +21,5 @@ class AppGenerator extends Generator {
     }
 
 }
+
 export = AppGenerator
