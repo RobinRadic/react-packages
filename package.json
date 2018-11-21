@@ -12,7 +12,6 @@
     },
     "workspaces": {
         "packages": [
-            "apps/*",
             "packages/*"
         ],
         "nohoist": [
