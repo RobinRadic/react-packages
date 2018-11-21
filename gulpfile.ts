@@ -3,11 +3,10 @@ import * as gulp from 'gulp';
 import { WatchEvent } from 'gulp';
 import { execSync, ExecSyncOptionsWithStringEncoding } from 'child_process';
 import { merge } from 'lodash';
-import { mixin } from './packages/build-tools';
+import { mixin, utils } from './packages/build-tools';
 import { GulpEnvMixin, GulpInteractiveMixin } from './packages/build-tools-gulp';
-import { Monorepo, PackageInfo } from './packages/build-tools-monorepo';
+import { Monorepo, Package } from './packages/build-tools-monorepo';
 import { each } from 'async';
-import { resolve } from 'path';
 
 const monorepo                       = new Monorepo({ cwd: __dirname });
 const exec                           = (cmd: string, options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => {
@@ -44,10 +43,12 @@ export class Gulpfile {
 
     @Task('watch') watch() { return this.watchPackages()}
 
+    @Task('version') version() { return this.versionPackages()}
+
     @Task('pick')
     @Task('default')
     async pick() {
-        let choices  = [ 'build', 'publish', 'test' ];
+        let choices  = [ 'build', 'publish', 'version' ];
         let task     = await this.list('Select option', choices);
         let packages = await this.selectPackages(true);
 
@@ -55,13 +56,22 @@ export class Gulpfile {
             await this.buildPackages(packages);
         } else if ( task === 'publish' ) {
             await this.publishPackages(packages);
+        } else if ( task === 'version' ) {
+            await this.versionPackages(packages);
         }
     }
 
-    protected async buildPackages(packages?: PackageInfo[]) {
-        if ( ! Array.isArray(packages) ) {
-            packages = await this.selectPackages(true);
-        }
+    protected async versionPackages(packages?: Package[]) {
+        packages = packages || await this.selectPackages(true);
+        each(packages, async (pkg, cb) => {
+            let choice = await this.list(`Select a new version for ${pkg.name} (currently ${pkg.version}) `, utils.getVersionBumpChoices(pkg.version));
+            pkg.extend({ version: choice }).write();
+            cb();
+        });
+    }
+
+    protected async buildPackages(packages?: Package[]) {
+        packages = packages || await this.selectPackages(true);
         each(packages, async (pkg, cb) => {
             await this.buildPackage(pkg);
             cb();
@@ -69,41 +79,41 @@ export class Gulpfile {
     }
 
 
-    protected async publishPackages(packages?: PackageInfo[]) {
+    protected async publishPackages(packages?: Package[]) {
         packages    = packages || await this.selectPackages(true);
         let choices = [ 'no', 'all', 'ask' ];
         let forceOn = await this.list('Force publish on', choices, { default: 'no' })
         each(packages, async (pkg, cb) => {
             let force = forceOn === 'all';
             if ( forceOn === 'ask' ) {
-                force = await this.confirm('Force publish ' + pkg.package.name, false)
+                force = await this.confirm('Force publish ' + pkg.name, false)
             }
             await this.publishPackage(pkg, force);
             cb();
         })
     }
 
-    protected async watchPackages(packages?: PackageInfo[]) {
+    protected async watchPackages(packages?: Package[]) {
         packages = packages || await this.selectPackages(true);
         packages.forEach(pkg => {
-            gulp.watch(resolve(pkg.location, 'src/**/*.ts'), (event: WatchEvent) => {
+            gulp.watch(pkg.getPath('src/**/*.ts'), (event: WatchEvent) => {
                 return this.buildPackage(pkg)
             })
         })
     }
 
-    protected async publishPackage(pkg: PackageInfo, force: boolean = false) {
+    protected async publishPackage(pkg: Package, force: boolean = false) {
         let cmd = 'npm publish';
         if ( force ) { cmd += ' --force'; }
         exec(cmd, { cwd: pkg.location });
     }
 
-    protected async buildPackage(pkg: PackageInfo, cmd: string = 'prod:build') {
-        cmds.run(cmd, pkg.package.name)
+    protected async buildPackage(pkg: Package, cmd: string = 'prod:build') {
+        cmds.run(cmd, pkg.name)
     }
 
-    protected async selectPackages(multi: boolean = true): Promise<PackageInfo[]> {
-        let choices  = monorepo.packages.map(pkg => pkg.package.name);
+    protected async selectPackages(multi: boolean = true): Promise<Package[]> {
+        let choices  = monorepo.packages.map(pkg => pkg.name);
         let packages = await this.inquire<any>('Select packages', multi ? 'checkbox' : 'list', { choices })
         return multi ? packages.map(pkg => monorepo.getPackage(pkg)) : [ monorepo.getPackage(packages) ];
     }

@@ -3,7 +3,6 @@ import { dirname, resolve } from 'path';
 import { existsSync, readFileSync } from 'fs';
 import { PackageInfo } from './interfaces';
 
-
 export function getJSONFile<T>(...path: string[]): T {
     let resolvedPath = resolve(...path);
     if ( ! existsSync(resolvedPath) ) {

@@ -6,3 +6,6 @@ export * from './loadEnv'
 export * from './minify'
 export * from './purify'
 export * from './reportFileSizes'
+export * from './getVersionBumpChoices'
+
+

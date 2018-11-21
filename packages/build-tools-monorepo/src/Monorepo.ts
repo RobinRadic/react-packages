@@ -1,7 +1,8 @@
 import { merge } from 'lodash';
 import { getJSONFile, getPackages } from './utils';
 import { IPackageJSON } from '@radic/build-tools';
-import { ILernaJSON, PackageInfo } from './interfaces';
+import { ILernaJSON } from './interfaces';
+import { Package } from './Package';
 
 export interface MonorepoConstructorOptions {
     cwd?: string
@@ -13,8 +14,8 @@ export class Monorepo {
     lernaConfig?: ILernaJSON
 
 
-    useLerna: boolean                = false
-    private _packages: PackageInfo[] = null
+    useLerna: boolean            = false
+    private _packages: Package[] = null
 
     constructor(options: MonorepoConstructorOptions = {}) {
         options = merge(<MonorepoConstructorOptions>{
@@ -37,9 +38,9 @@ export class Monorepo {
         return Array.isArray(this.packageConfig.workspaces.packages) ? this.packageConfig.workspaces.packages : this.packageConfig.workspaces as any;
     }
 
-    get packages(): PackageInfo[] {
+    get packages(): Package[] {
         if ( ! this._packages ) {
-            this._packages = getPackages(this.packageGlobs);
+            this._packages = getPackages(this.packageGlobs).map(pkg => new Package(pkg.location, pkg.package));
         }
         return this._packages;
     }
@@ -48,7 +49,7 @@ export class Monorepo {
         return this.getPackage(name) !== undefined;
     }
 
-    getPackage(name: string): PackageInfo | undefined {
-        return this.packages.find(pkg => pkg.package.name === name);
+    getPackage(name: string): Package | undefined {
+        return this.packages.find(pkg => pkg.name === name);
     }
 }

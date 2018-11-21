@@ -34,6 +34,8 @@
         "@types/inquirer": "^0.0.43",
         "@types/is-root": "^1.0.0",
         "@types/lodash": "^4.14.117",
+        "@types/semver": "^5.5.0",
+        "semver": "^5.6.0",
         "babel-minify": "^0.5.0",
         "chalk": "^2.4.1",
         "detect-port-alt": "^1.1.6",
