@@ -1,7 +1,7 @@
 {
     "name": "@radic/build-tools",
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "jsnext:main": "dist/index.js",

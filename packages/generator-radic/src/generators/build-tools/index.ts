@@ -30,6 +30,8 @@ class BuildToolsGenerator extends Generator {
         if ( this.tools.monorepo ) {
             let monorepoType = await this.list('Monorepo type', [ 'lerna', 'yarn', 'both' ], { default: 'both' })
         }
+
+        this.config.set('build_tools', this.tools);
     }
 
     async writing() {

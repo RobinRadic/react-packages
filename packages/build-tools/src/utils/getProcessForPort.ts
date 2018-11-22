@@ -15,7 +15,7 @@ function isProcessAReactApp(processCommand) {
     return /^node .*react-scripts\/scripts\/start\.js\s?$/.test(processCommand);
 }
 
-function getProcessIdOnPort(port) {
+export function getProcessIdOnPort(port) {
     return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)
         .split('\n')[ 0 ]
         .trim();

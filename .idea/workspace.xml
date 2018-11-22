@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d60629d-6a3c-446b-a045-cb4a9094e1bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gulpfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/generator-radic/generators/build-tools/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/generator-radic/generators/build-tools/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +22,18 @@
     <session id="1857484757">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.0" value="6" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,7 +49,7 @@
           <entry key="iml" value="3" />
           <entry key="java" value="1" />
           <entry key="js" value="40" />
-          <entry key="json" value="158" />
+          <entry key="json" value="161" />
           <entry key="less" value="2" />
           <entry key="log" value="2" />
           <entry key="md" value="17" />
@@ -48,7 +57,7 @@
           <entry key="opts" value="2" />
           <entry key="scss" value="2" />
           <entry key="sh" value="4" />
-          <entry key="ts" value="441" />
+          <entry key="ts" value="454" />
           <entry key="tsx" value="14" />
           <entry key="txt" value="5" />
           <entry key="xml" value="7" />
@@ -64,17 +73,17 @@
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JAVA" value="1" />
-          <entry key="JSON" value="104" />
+          <entry key="JSON" value="105" />
           <entry key="JavaScript" value="40" />
           <entry key="Less" value="2" />
           <entry key="Markdown" value="17" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SCSS" value="2" />
-          <entry key="TypeScript" value="441" />
+          <entry key="TypeScript" value="454" />
           <entry key="TypeScript JSX" value="14" />
           <entry key="XML" value="7" />
           <entry key="YAML" value="1" />
-          <entry key="tsconfig" value="54" />
+          <entry key="tsconfig" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,13 +94,13 @@
           <entry key="gitignore" value="30" />
           <entry key="iml" value="55" />
           <entry key="js" value="245" />
-          <entry key="json" value="3490" />
+          <entry key="json" value="3511" />
           <entry key="md" value="148" />
           <entry key="npmignore" value="15" />
           <entry key="opts" value="24" />
           <entry key="scss" value="1" />
           <entry key="sh" value="176" />
-          <entry key="ts" value="23188" />
+          <entry key="ts" value="23374" />
           <entry key="tsx" value="72" />
           <entry key="yarnrc" value="1" />
         </counts>
@@ -105,34 +114,25 @@
           <entry key="Markdown" value="148" />
           <entry key="PLAIN_TEXT" value="71" />
           <entry key="SCSS" value="1" />
-          <entry key="TypeScript" value="23188" />
+          <entry key="TypeScript" value="23374" />
           <entry key="TypeScript JSX" value="72" />
-          <entry key="tsconfig" value="574" />
+          <entry key="tsconfig" value="595" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="13" />
+          <entry key="TypeScriptServerServiceImpl" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="93" column="10" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="405">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -158,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
+            <state relative-caret-position="999">
               <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
             </state>
           </provider>
@@ -167,7 +167,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/react-site/webpack.config.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162" />
+            <state relative-caret-position="837">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -231,7 +233,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/node/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="1755">
               <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
             </state>
           </provider>
@@ -272,7 +274,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@types/semver/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-945">
+            <state relative-caret-position="405">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc;n#inc#0" expanded="true" />
@@ -293,7 +295,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="1620">
               <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
             </state>
           </provider>
@@ -338,8 +340,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/build-tools/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="756">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -347,6 +349,106 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/build-tools/dist/utils/index.d.ts">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/presets.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/loaders.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="66" column="113" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="837">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/webpack.config.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2592">
+              <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="97" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -403,10 +505,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/packages/build-tools/src/index.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/lerna/index.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-gulp/README.md" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/README.md" />
         <option value="$PROJECT_DIR$/packages/build-tools-webpack/README.md" />
         <option value="$PROJECT_DIR$/packages/reset-evals/src/utils.ts" />
         <option value="$PROJECT_DIR$/packages/reset-evals/src/ResetEvals.ts" />
@@ -425,7 +523,6 @@
         <option value="$PROJECT_DIR$/packages/console-colors/test/tsconfig.json" />
         <option value="$PROJECT_DIR$/packages/console-colors/test/ParserTest.ts" />
         <option value="$PROJECT_DIR$/.idea/at-radic.iml" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/packages/console-colors/src/index.ts" />
         <option value="$PROJECT_DIR$/packages/console-colors/src/lib/colors.ts" />
         <option value="$PROJECT_DIR$/packages/console-colors/src/lib/index.ts" />
@@ -441,7 +538,6 @@
         <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env" />
         <option value="$PROJECT_DIR$/packages/generator-radic/package.json" />
         <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/app/index.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" />
         <option value="$PROJECT_DIR$/packages/build-tools-gulp/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts" />
@@ -454,6 +550,12 @@
         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Package.ts" />
         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts" />
         <option value="$PROJECT_DIR$/gulpfile.ts" />
+        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" />
+        <option value="$PROJECT_DIR$/packages/build-tools/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" />
+        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" />
       </list>
     </option>
   </component>
@@ -488,20 +590,26 @@
       <path value="$PROJECT_DIR$/packages/build-tools-gulp/package.json" />
       <path value="$PROJECT_DIR$/packages/build-tools-monorepo/package.json" />
       <path value="$PROJECT_DIR$/packages/build-tools-rollup/package.json" />
+      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/@types/express/package.json" />
+      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/@types/node/package.json" />
+      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/babel-polyfill/package.json" />
+      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/postcss/package.json" />
       <path value="$PROJECT_DIR$/packages/build-tools-webpack/package.json" />
       <path value="$PROJECT_DIR$/packages/build-tools/package.json" />
       <path value="$PROJECT_DIR$/packages/console-colors/package.json" />
       <path value="$PROJECT_DIR$/packages/demo-build-tools/package.json" />
+      <path value="$PROJECT_DIR$/packages/generator-radic/node_modules/@types/node/package.json" />
       <path value="$PROJECT_DIR$/packages/generator-radic/package.json" />
       <path value="$PROJECT_DIR$/packages/reset-evals/package.json" />
       <path value="$PROJECT_DIR$/packages/typestyled-components/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1600" />
+    <option name="x" value="-1" />
     <option name="y" value="34" />
-    <option name="width" value="3840" />
-    <option name="height" value="2088" />
+    <option name="width" value="3842" />
+    <option name="height" value="2085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -511,22 +619,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
-              <item name="stores" type="1f31426a:PackageElementNode" />
+              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
-              <item name="styles" type="1f31426a:PackageElementNode" />
+              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -566,21 +682,6 @@
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="build-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -595,56 +696,59 @@
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools-gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools-gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools-monorepo" type="462c0819:PsiDirectoryNode" />
+              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="build-tools-monorepo" type="462c0819:PsiDirectoryNode" />
+              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+      <pane id="PackagesPane">
+        <subPane>
           <expand>
             <path>
-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+              <item name="stores" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+              <item name="styles" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -748,7 +852,7 @@
     <frame x="1599" y="34" width="3842" height="2089" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.14891934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.15129152" />
       <window_info id="Structure" order="1" sideWeight="0.5003791" side_tool="true" weight="0.14654718" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -762,7 +866,7 @@
       <window_info anchor="bottom" id="GraphQL" order="7" sideWeight="0.49973643" visible="true" weight="0.3299389" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.5071165" side_tool="true" weight="0.3268839" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4928835" visible="true" weight="0.3268839" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4928835" visible="true" weight="0.32637474" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="13" sideWeight="0.49578282" weight="0.32739308" />
@@ -872,111 +976,82 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/yeoman-generator/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/gulpfile.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/lib/Ask.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/inquirer/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/lib/Generator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/src/mixins/GulpInteractiveMixin.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/plugins.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/build.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/dist/utils/GulpWebpackMixin.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.gulpfile.tst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.config.tst">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/react-site/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/react-site/webpack.config.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/src/mixins/GulpEnvMixin.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env.example" />
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/generators/build-tools/templates/webpack.config.js" />
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/webpack-chain/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2133">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/interfaces.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/react-site/webpack.config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -989,23 +1064,14 @@
     <entry file="file://$PROJECT_DIR$/apps/react-site/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.gitignore">
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="864">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env.example">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/git/index.ts">
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/gulpfile.tst">
@@ -1015,7 +1081,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/generators/build-tools/templates/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/app/index.ts">
@@ -1025,9 +1091,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/git/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/node/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="1755">
           <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
         </state>
       </provider>
@@ -1039,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -1053,67 +1115,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/package.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/semver/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc;n#inc#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/interfaces.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/Monorepo.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1122,27 +1125,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/semver/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/dist/utils/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getVersionBumpChoices.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        <state relative-caret-position="405">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc;n#inc#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,6 +1142,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -1160,17 +1156,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/Monorepo.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+        <state relative-caret-position="378">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.ts">
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="93" column="10" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getVersionBumpChoices.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/dist/utils/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/presets.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/webpack.config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2592">
+          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="97" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/loaders.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="66" column="113" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="2890" column="13" selection-start-line="2890" selection-start-column="13" selection-end-line="2890" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
         </state>
       </provider>
     </entry>

@@ -1,13 +1,22 @@
 import * as inquirer from 'inquirer';
-import { getProcessForPort } from './getProcessForPort';
+import { getProcessForPort, getProcessIdOnPort } from './getProcessForPort';
 
 import isRoot from 'is-root';
 import detect from 'detect-port-alt';
 import chalk from 'chalk';
 import { clearConsole } from './clearConsole';
+import { execSync, ExecSyncOptionsWithStringEncoding } from 'child_process';
 
 const isInteractive = process.stdout.isTTY;
 
+const execOptions: ExecSyncOptionsWithStringEncoding = {
+    encoding: 'utf8',
+    stdio   : [
+        'pipe', // stdin (default)
+        'pipe', // stdout (default)
+        'ignore' //stderr
+    ]
+};
 export function choosePort(host, defaultPort) {
     return detect(defaultPort, host).then(port => new Promise(resolve => {
             if ( port === defaultPort ) {
@@ -22,17 +31,18 @@ export function choosePort(host, defaultPort) {
                 const existingProcess = getProcessForPort(defaultPort);
                 const question        = {
                     type   : 'confirm',
-                    name   : 'shouldChangePort',
+                    name   : 'shouldKillProcess',
                     message:
                         chalk.yellow(
                             message +
                             `${existingProcess ? ` Probably:\n  ${existingProcess}` : ''}`
-                        ) + '\n\nWould you like to run the app on another port instead?',
+                        ) + '\n\nWould you like to kill the process?',
                     default: true
                 };
                 inquirer.prompt(question).then((answer: any) => {
-                    if ( answer.shouldChangePort ) {
-                        resolve(port);
+                    if ( answer.shouldKillProcess ) {
+                        execSync('kill ' + getProcessIdOnPort(defaultPort));
+                        resolve(null);
                     } else {
                         resolve(null);
                     }

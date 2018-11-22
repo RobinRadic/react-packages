@@ -15,7 +15,9 @@
         "allowSyntheticDefaultImports": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "jsx": "preserve"
+        "sourceMap": true,
+        "allowJs": true,
+        "jsx": "react"
     },
     "include": [
         //        "packages",
