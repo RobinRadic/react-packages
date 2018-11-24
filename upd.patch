@@ -1,0 +1,1144 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ .idea/workspace.xml	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -2,7 +2,15 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="2d60629d-6a3c-446b-a045-cb4a9094e1bf" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/gulpfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/build-tools/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/package.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/build-tools/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools/tsconfig.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/generator-radic/generators/build-tools/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/generator-radic/generators/build-tools/index.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -14,17 +22,18 @@
+     <session id="1857484757">
+       <usages-collector id="statistics.lifecycle.project">
+         <counts>
+-          <entry key="project.closed" value="14" />
+-          <entry key="project.open.time.0" value="6" />
++          <entry key="project.closed" value="17" />
++          <entry key="project.open.time.0" value="7" />
+           <entry key="project.open.time.1" value="4" />
+-          <entry key="project.open.time.14" value="1" />
++          <entry key="project.open.time.14" value="2" />
++          <entry key="project.open.time.2" value="1" />
+           <entry key="project.open.time.25" value="1" />
+           <entry key="project.open.time.3" value="1" />
+           <entry key="project.open.time.4" value="1" />
+           <entry key="project.open.time.5" value="1" />
+           <entry key="project.open.time.6" value="1" />
+           <entry key="project.open.time.8" value="2" />
+-          <entry key="project.opened" value="19" />
++          <entry key="project.opened" value="22" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.open">
+@@ -40,7 +49,7 @@
+           <entry key="iml" value="3" />
+           <entry key="java" value="1" />
+           <entry key="js" value="40" />
+-          <entry key="json" value="158" />
++          <entry key="json" value="161" />
+           <entry key="less" value="2" />
+           <entry key="log" value="2" />
+           <entry key="md" value="17" />
+@@ -48,7 +57,7 @@
+           <entry key="opts" value="2" />
+           <entry key="scss" value="2" />
+           <entry key="sh" value="4" />
+-          <entry key="ts" value="441" />
++          <entry key="ts" value="454" />
+           <entry key="tsx" value="14" />
+           <entry key="txt" value="5" />
+           <entry key="xml" value="7" />
+@@ -64,17 +73,17 @@
+           <entry key="HTML" value="1" />
+           <entry key="IDEA_MODULE" value="3" />
+           <entry key="JAVA" value="1" />
+-          <entry key="JSON" value="104" />
++          <entry key="JSON" value="105" />
+           <entry key="JavaScript" value="40" />
+           <entry key="Less" value="2" />
+           <entry key="Markdown" value="17" />
+           <entry key="PLAIN_TEXT" value="37" />
+           <entry key="SCSS" value="2" />
+-          <entry key="TypeScript" value="441" />
++          <entry key="TypeScript" value="454" />
+           <entry key="TypeScript JSX" value="14" />
+           <entry key="XML" value="7" />
+           <entry key="YAML" value="1" />
+-          <entry key="tsconfig" value="54" />
++          <entry key="tsconfig" value="56" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.edit">
+@@ -85,13 +94,13 @@
+           <entry key="gitignore" value="30" />
+           <entry key="iml" value="55" />
+           <entry key="js" value="245" />
+-          <entry key="json" value="3490" />
++          <entry key="json" value="3511" />
+           <entry key="md" value="148" />
+           <entry key="npmignore" value="15" />
+           <entry key="opts" value="24" />
+           <entry key="scss" value="1" />
+           <entry key="sh" value="176" />
+-          <entry key="ts" value="23188" />
++          <entry key="ts" value="23374" />
+           <entry key="tsx" value="72" />
+           <entry key="yarnrc" value="1" />
+         </counts>
+@@ -105,34 +114,25 @@
+           <entry key="Markdown" value="148" />
+           <entry key="PLAIN_TEXT" value="71" />
+           <entry key="SCSS" value="1" />
+-          <entry key="TypeScript" value="23188" />
++          <entry key="TypeScript" value="23374" />
+           <entry key="TypeScript JSX" value="72" />
+-          <entry key="tsconfig" value="574" />
++          <entry key="tsconfig" value="595" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.js.language.service.starts">
+         <counts>
+-          <entry key="TypeScriptServerServiceImpl" value="13" />
++          <entry key="TypeScriptServerServiceImpl" value="16" />
+         </counts>
+       </usages-collector>
+     </session>
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/gulpfile.ts">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="461">
+-              <caret line="93" column="10" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="972">
+-              <caret line="60" selection-start-line="60" selection-end-line="60" />
++            <state relative-caret-position="405">
++              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+             </state>
+           </provider>
+         </entry>
+@@ -158,7 +158,7 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="650">
++            <state relative-caret-position="999">
+               <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+             </state>
+           </provider>
+@@ -167,7 +167,9 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/apps/react-site/webpack.config.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-162" />
++            <state relative-caret-position="837">
++              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
++            </state>
+           </provider>
+         </entry>
+       </file>
+@@ -231,7 +233,7 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/node/index.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="378">
++            <state relative-caret-position="1755">
+               <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+             </state>
+           </provider>
+@@ -272,7 +274,7 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/node_modules/@types/semver/index.d.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-945">
++            <state relative-caret-position="405">
+               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+               <folding>
+                 <element signature="n#!!doc;n#inc#0" expanded="true" />
+@@ -293,7 +295,7 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="440">
++            <state relative-caret-position="1620">
+               <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+             </state>
+           </provider>
+@@ -338,8 +340,8 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/packages/build-tools/package.json">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="729">
+-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
++            <state relative-caret-position="756">
++              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+             </state>
+           </provider>
+         </entry>
+@@ -349,6 +351,106 @@
+           <provider selected="true" editor-type-id="text-editor" />
+         </entry>
+       </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/presets.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="486">
++              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="891">
++              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/loaders.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="648">
++              <caret line="66" column="113" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="113" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/tsconfig.json">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="459">
++              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts">
++          <provider selected="true" editor-type-id="text-editor" />
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="837">
++              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="378">
++              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools/tsconfig.json">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="270">
++              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/webpack.config.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="2592">
++              <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="97" selection-end-column="38" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/package.json">
++          <provider selected="true" editor-type-id="text-editor" />
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="570">
++              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="433">
++              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
++            </state>
++          </provider>
++        </entry>
++      </file>
+     </leaf>
+   </component>
+   <component name="FindInProjectRecents">
+@@ -403,10 +505,6 @@
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+-        <option value="$PROJECT_DIR$/packages/build-tools/src/index.ts" />
+-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/lerna/index.ts" />
+-        <option value="$PROJECT_DIR$/packages/build-tools-gulp/README.md" />
+-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/README.md" />
+         <option value="$PROJECT_DIR$/packages/build-tools-webpack/README.md" />
+         <option value="$PROJECT_DIR$/packages/reset-evals/src/utils.ts" />
+         <option value="$PROJECT_DIR$/packages/reset-evals/src/ResetEvals.ts" />
+@@ -425,7 +523,6 @@
+         <option value="$PROJECT_DIR$/packages/console-colors/test/tsconfig.json" />
+         <option value="$PROJECT_DIR$/packages/console-colors/test/ParserTest.ts" />
+         <option value="$PROJECT_DIR$/.idea/at-radic.iml" />
+-        <option value="$PROJECT_DIR$/tsconfig.json" />
+         <option value="$PROJECT_DIR$/packages/console-colors/src/index.ts" />
+         <option value="$PROJECT_DIR$/packages/console-colors/src/lib/colors.ts" />
+         <option value="$PROJECT_DIR$/packages/console-colors/src/lib/index.ts" />
+@@ -441,7 +538,6 @@
+         <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env" />
+         <option value="$PROJECT_DIR$/packages/generator-radic/package.json" />
+         <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/app/index.ts" />
+-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" />
+         <option value="$PROJECT_DIR$/packages/build-tools-gulp/package.json" />
+         <option value="$PROJECT_DIR$/package.json" />
+         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts" />
+@@ -454,6 +550,12 @@
+         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Package.ts" />
+         <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts" />
+         <option value="$PROJECT_DIR$/gulpfile.ts" />
++        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" />
++        <option value="$PROJECT_DIR$/tsconfig.json" />
++        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" />
++        <option value="$PROJECT_DIR$/packages/build-tools/tsconfig.json" />
++        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" />
++        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" />
+       </list>
+     </option>
+   </component>
+@@ -488,20 +590,26 @@
+       <path value="$PROJECT_DIR$/packages/build-tools-gulp/package.json" />
+       <path value="$PROJECT_DIR$/packages/build-tools-monorepo/package.json" />
+       <path value="$PROJECT_DIR$/packages/build-tools-rollup/package.json" />
++      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/@types/express/package.json" />
++      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/@types/node/package.json" />
++      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/babel-polyfill/package.json" />
++      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/fs-extra/package.json" />
++      <path value="$PROJECT_DIR$/packages/build-tools-webpack/node_modules/postcss/package.json" />
+       <path value="$PROJECT_DIR$/packages/build-tools-webpack/package.json" />
+       <path value="$PROJECT_DIR$/packages/build-tools/package.json" />
+       <path value="$PROJECT_DIR$/packages/console-colors/package.json" />
+       <path value="$PROJECT_DIR$/packages/demo-build-tools/package.json" />
++      <path value="$PROJECT_DIR$/packages/generator-radic/node_modules/@types/node/package.json" />
+       <path value="$PROJECT_DIR$/packages/generator-radic/package.json" />
+       <path value="$PROJECT_DIR$/packages/reset-evals/package.json" />
+       <path value="$PROJECT_DIR$/packages/typestyled-components/package.json" />
+     </packageJsonPaths>
+   </component>
+   <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="x" value="1600" />
++    <option name="x" value="-1" />
+     <option name="y" value="34" />
+-    <option name="width" value="3840" />
+-    <option name="height" value="2088" />
++    <option name="width" value="3842" />
++    <option name="height" value="2085" />
+   </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -511,22 +619,30 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="PackagesPane">
+-        <subPane>
++      <pane id="Scope">
++        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+           <expand>
+             <path>
+-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
++              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
++              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
++            </path>
++            <path>
++              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
++              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
++              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+             </path>
+             <path>
+-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+-              <item name="stores" type="1f31426a:PackageElementNode" />
++              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
++              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
++              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+             </path>
+             <path>
+-              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
+-              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+-              <item name="styles" type="1f31426a:PackageElementNode" />
++              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
++              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
++              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+             </path>
+           </expand>
+           <select />
+@@ -566,85 +682,73 @@
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+               <item name="build-tools" type="462c0819:PsiDirectoryNode" />
+-              <item name="dist" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+               <item name="build-tools" type="462c0819:PsiDirectoryNode" />
+-              <item name="dist" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="utils" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools" type="462c0819:PsiDirectoryNode" />
+-              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools" type="462c0819:PsiDirectoryNode" />
++              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+-              <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools-gulp" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools-gulp" type="462c0819:PsiDirectoryNode" />
++              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="config" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools-monorepo" type="462c0819:PsiDirectoryNode" />
++              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+               <item name="packages" type="462c0819:PsiDirectoryNode" />
+-              <item name="build-tools-monorepo" type="462c0819:PsiDirectoryNode" />
++              <item name="build-tools-webpack" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="utils" type="462c0819:PsiDirectoryNode" />
+             </path>
+           </expand>
+           <select />
+         </subPane>
+       </pane>
+-      <pane id="Scope">
+-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
++      <pane id="PackagesPane">
++        <subPane>
+           <expand>
+             <path>
+-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+-            </path>
+-            <path>
+-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
++              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
+             </path>
+             <path>
+-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+-              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
++              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
++              <item name="stores" type="1f31426a:PackageElementNode" />
+             </path>
+             <path>
+-              <item name="at-radic" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+-              <item name="at-radic" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+-              <item name="packages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+-              <item name="typestyled-components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
++              <item name="at-radic" type="58d84e3e:PackageViewProjectNode" />
++              <item name="at-radic" type="616d4139:PackageViewModuleNode" />
++              <item name="styles" type="1f31426a:PackageElementNode" />
+             </path>
+           </expand>
+           <select />
+@@ -748,7 +852,7 @@
+     <frame x="1599" y="34" width="3842" height="2089" extended-state="6" />
+     <editor active="true" />
+     <layout>
+-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.14891934" />
++      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.15129152" />
+       <window_info id="Structure" order="1" sideWeight="0.5003791" side_tool="true" weight="0.14654718" />
+       <window_info id="Designer" order="2" />
+       <window_info id="Favorites" order="3" side_tool="true" />
+@@ -762,7 +866,7 @@
+       <window_info anchor="bottom" id="GraphQL" order="7" sideWeight="0.49973643" visible="true" weight="0.3299389" />
+       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+       <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.5071165" side_tool="true" weight="0.3268839" />
+-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4928835" visible="true" weight="0.3268839" />
++      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4928835" visible="true" weight="0.32637474" />
+       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+       <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="13" sideWeight="0.49578282" weight="0.32739308" />
+@@ -872,111 +976,82 @@
+     </expressions>
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/node_modules/@types/yeoman-generator/index.d.ts">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="440">
+-          <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/index.js">
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.config.tst">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/index.ts">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="81">
+-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/gulpfile.ts">
++    <entry file="file://$PROJECT_DIR$/apps/react-site/package.json">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/lib/Ask.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/src/mixins/GulpEnvMixin.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="56">
+-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
++        <state relative-caret-position="108">
++          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/node_modules/@types/inquirer/index.d.ts">
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.gitignore" />
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env.example" />
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/generators/build-tools/templates/webpack.config.js" />
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="440">
+-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
++        <state relative-caret-position="54">
++          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/lib/Generator.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/index.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="515">
+-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
++        <state relative-caret-position="81">
++          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/src/mixins/GulpInteractiveMixin.ts">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="189">
+-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/plugins.ts">
++    <entry file="file://$PROJECT_DIR$/node_modules/@types/webpack-chain/index.d.ts">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="440">
+-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
++          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/build.ts">
++    <entry file="file://$PROJECT_DIR$/gulpfile.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="81">
+-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
++        <state relative-caret-position="2133">
++          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="836">
+-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
++        <state relative-caret-position="405">
++          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/dist/utils/GulpWebpackMixin.d.ts">
++    <entry file="file://$PROJECT_DIR$/package.json">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="81">
+-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
++        <state relative-caret-position="351">
++          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/interfaces.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="216">
+-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++        <state relative-caret-position="54">
++          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.gulpfile.tst">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="243">
+-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
++        <state relative-caret-position="999">
++          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.config.tst">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/apps/react-site/package.json">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/apps/react-site/webpack.config.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-162" />
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-gulp/src/mixins/GulpEnvMixin.ts">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="108">
+-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
++        <state relative-caret-position="837">
++          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+         </state>
+       </provider>
+     </entry>
+@@ -989,23 +1064,14 @@
+     <entry file="file://$PROJECT_DIR$/apps/react-site/.env">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.gitignore">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/package.json">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1485">
+-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
++        <state relative-caret-position="864">
++          <caret line="32" selection-start-line="32" selection-end-line="32" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env.example">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/package.json">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/git/index.ts">
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/gulpfile.tst">
+@@ -1015,7 +1081,7 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/generators/build-tools/templates/webpack.config.js">
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/package.json">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/app/index.ts">
+@@ -1025,9 +1091,12 @@
+         </state>
+       </provider>
+     </entry>
++    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/git/index.ts">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
+     <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/node/index.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="378">
++        <state relative-caret-position="1755">
+           <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+         </state>
+       </provider>
+@@ -1036,13 +1105,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="810">
+           <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="972">
+-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+         </state>
+       </provider>
+     </entry>
+@@ -1053,19 +1115,19 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/package.json">
++    <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/package.json">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/utils.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="351">
+-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
++        <state relative-caret-position="729">
++          <caret line="27" selection-start-line="27" selection-end-line="27" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/package.json">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/node_modules/@types/semver/index.d.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-945">
++        <state relative-caret-position="405">
+           <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+           <folding>
+             <element signature="n#!!doc;n#inc#0" expanded="true" />
+@@ -1073,24 +1135,24 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/interfaces.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Package.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="54">
+-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
++        <state relative-caret-position="756">
++          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="54">
+-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
++        <state relative-caret-position="1620">
++          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/interfaces.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/index.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="440">
+-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
++        <state relative-caret-position="27">
++          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+         </state>
+       </provider>
+     </entry>
+@@ -1101,76 +1163,110 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/index.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/index.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="216">
++          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getVersionBumpChoices.ts">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="81">
+-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
++          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/packages/build-tools/package.json">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="729">
+-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
++        <state relative-caret-position="756">
++          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/utils.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/dist/utils/index.d.ts">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/presets.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="729">
+-          <caret line="27" selection-start-line="27" selection-end-line="27" />
++        <state relative-caret-position="486">
++          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/package.json">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="864">
+-          <caret line="32" selection-start-line="32" selection-end-line="32" />
++        <state relative-caret-position="891">
++          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/index.ts">
++    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="216">
+-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
++        <state relative-caret-position="459">
++          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools/dist/utils/index.d.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getVersionBumpChoices.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/utils/GulpWebpackMixin.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="81">
+-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
++        <state relative-caret-position="837">
++          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Package.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="756">
+-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
++        <state relative-caret-position="378">
++          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/index.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/tsconfig.json">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="27">
+-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
++        <state relative-caret-position="270">
++          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/webpack.config.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="650">
+-          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
++        <state relative-caret-position="2592">
++          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="97" selection-end-column="38" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/gulpfile.ts">
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/package.json">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools-webpack/src/config/loaders.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="648">
++          <caret line="66" column="113" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="113" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="441">
++          <caret line="2890" column="13" selection-start-line="2890" selection-start-column="13" selection-end-line="2890" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="461">
+-          <caret line="93" column="10" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
++        <state relative-caret-position="433">
++          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="570">
++          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+         </state>
+       </provider>
+     </entry>
+Index: packages/build-tools/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/build-tools/package.json	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/build-tools/package.json	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -1,7 +1,7 @@
+ {
+     "name": "@radic/build-tools",
+     "license": "MIT",
+-    "version": "1.1.0",
++    "version": "1.1.2",
+     "main": "dist/index.js",
+     "module": "dist/index.js",
+     "jsnext:main": "dist/index.js",
+Index: packages/build-tools/src/utils/choosePort.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/build-tools/src/utils/choosePort.ts	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/build-tools/src/utils/choosePort.ts	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -1,13 +1,22 @@
+ import * as inquirer from 'inquirer';
+-import { getProcessForPort } from './getProcessForPort';
++import { getProcessForPort, getProcessIdOnPort } from './getProcessForPort';
+ 
+ import isRoot from 'is-root';
+ import detect from 'detect-port-alt';
+ import chalk from 'chalk';
+ import { clearConsole } from './clearConsole';
++import { execSync, ExecSyncOptionsWithStringEncoding } from 'child_process';
+ 
+ const isInteractive = process.stdout.isTTY;
+ 
++const execOptions: ExecSyncOptionsWithStringEncoding = {
++    encoding: 'utf8',
++    stdio   : [
++        'pipe', // stdin (default)
++        'pipe', // stdout (default)
++        'ignore' //stderr
++    ]
++};
+ export function choosePort(host, defaultPort) {
+     return detect(defaultPort, host).then(port => new Promise(resolve => {
+             if ( port === defaultPort ) {
+@@ -22,17 +31,18 @@
+                 const existingProcess = getProcessForPort(defaultPort);
+                 const question        = {
+                     type   : 'confirm',
+-                    name   : 'shouldChangePort',
++                    name   : 'shouldKillProcess',
+                     message:
+                         chalk.yellow(
+                             message +
+                             `${existingProcess ? ` Probably:\n  ${existingProcess}` : ''}`
+-                        ) + '\n\nWould you like to run the app on another port instead?',
++                        ) + '\n\nWould you like to kill the process?',
+                     default: true
+                 };
+                 inquirer.prompt(question).then((answer: any) => {
+-                    if ( answer.shouldChangePort ) {
+-                        resolve(port);
++                    if ( answer.shouldKillProcess ) {
++                        execSync('kill ' + getProcessIdOnPort(defaultPort));
++                        resolve(null);
+                     } else {
+                         resolve(null);
+                     }
+Index: packages/build-tools/src/utils/getProcessForPort.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/build-tools/src/utils/getProcessForPort.ts	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/build-tools/src/utils/getProcessForPort.ts	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -15,7 +15,7 @@
+     return /^node .*react-scripts\/scripts\/start\.js\s?$/.test(processCommand);
+ }
+ 
+-function getProcessIdOnPort(port) {
++export function getProcessIdOnPort(port) {
+     return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)
+         .split('\n')[ 0 ]
+         .trim();
+Index: packages/build-tools/src/utils/minify.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/build-tools/src/utils/minify.ts	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/build-tools/src/utils/minify.ts	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -2,7 +2,12 @@
+ import { basename } from 'path';
+ import { find } from 'globule';
+ 
+-export function minify(fileGlobs: string[], minifyOptions: any = {}, overrides: any = {}): string[] {
++export function minify(
++    fileGlobs: string[],
++    minifyOptions: any                               = {},
++    overrides: any                                   = {},
++    filePathReplacerFn: (filePath: string) => string = (filePath: string) => filePath.replace(/\.js$/, '.min.js')
++): string[] {
+     let filePaths = find(fileGlobs);
+     console.log(`Starting minify on ${filePaths.length} files`)
+     return filePaths.map(filePath => {
+@@ -11,7 +16,7 @@
+             comments: false,
+             ...overrides
+         });
+-        let destFilePath = filePath.replace(/\.js$/, '.min.js');
++        let destFilePath = filePathReplacerFn(filePath);
+         writeFileSync(destFilePath, minified.code, 'utf8')
+         console.log(`minified: ${basename(filePath)} > ${basename(destFilePath)}`);
+         return destFilePath
+Index: packages/build-tools/tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/build-tools/tsconfig.json	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/build-tools/tsconfig.json	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -7,7 +7,8 @@
+         "esModuleInterop": true,
+         "resolveJsonModule": true,
+         "declaration": true,
+-        "outDir": "dist"
++        "outDir": "dist",
++        "allowJs": false
+     },
+     "include": [
+         "src"
+Index: packages/generator-radic/generators/build-tools/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/generator-radic/generators/build-tools/index.js	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/generator-radic/generators/build-tools/index.js	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -33,6 +33,7 @@
+             if (this.tools.monorepo) {
+                 let monorepoType = yield this.list('Monorepo type', ['lerna', 'yarn', 'both'], { default: 'both' });
+             }
++            this.config.set('build_tools', this.tools);
+         });
+     }
+     writing() {
+@@ -99,4 +100,4 @@
+     }
+ }
+ module.exports = BuildToolsGenerator;
+-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZ2VuZXJhdG9ycy9idWlsZC10b29scy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQSxtQ0FBc0M7QUFDdEMsMkNBQW1EO0FBQ25ELG1DQUErQjtBQUUvQixNQUFNLG1CQUFvQixTQUFRLGVBQVM7SUFBM0M7O1FBR0ksVUFBSyxHQUlEO1lBQ0EsSUFBSSxFQUFNLEtBQUs7WUFDZixPQUFPLEVBQUcsS0FBSztZQUNmLFFBQVEsRUFBRSxLQUFLO1NBQ2xCLENBQUE7SUFrRkwsQ0FBQztJQS9FUyxTQUFTOztZQUNYLENBQUMsTUFBTSxJQUFJLENBQUMsUUFBUSxDQUFDLG9CQUFvQixFQUFFLENBQUUsTUFBTSxFQUFFLFNBQVMsRUFBRSxVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBRSxNQUFNLENBQUUsR0FBRyxJQUFJLENBQUMsQ0FBQztZQUM5SCxJQUFLLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxFQUFHO2FBRXRCO1lBQ0QsSUFBSyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFBRztnQkFDdEI7OzttQkFHRzthQUNOO1lBQ0QsSUFBSyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsRUFBRztnQkFDdkIsSUFBSSxZQUFZLEdBQUcsTUFBTSxJQUFJLENBQUMsSUFBSSxDQUFDLGVBQWUsRUFBRSxDQUFFLE9BQU8sRUFBRSxNQUFNLEVBQUUsTUFBTSxDQUFFLEVBQUUsRUFBRSxPQUFPLEVBQUUsTUFBTSxFQUFFLENBQUMsQ0FBQTthQUN4RztRQUNMLENBQUM7S0FBQTtJQUVLLE9BQU87O1lBQ1QsSUFBSSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsRUFBRSxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsZUFBZSxDQUFDLGNBQWMsQ0FBQyxFQUFFO2dCQUM5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UyxHQUFHLFdBQVcsQ0FBRSxHQUFHLEdBQUcsSUFBRyxNQUFNLHdCQUFnQixDQUFDLFNBQVMsR0FBRyxXQUFXLENBQUMsQ0FBQSxDQUFBO2FBQzlHO1FBQ0wsQ0FBQztLQUFBO0lBRUssY0FBYyxDQUFDLFdBQW1CLEVBQUUsV0FBb0IsS0FBSzs7WUFDL0QsSUFBSSxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUUsV0FBVyxDQUFFLEdBQUcsR0FBRyxJQUFHLE1BQU0sd0JBQWdCLENBQUMsV0FBVyxDQUFDLENBQUEsQ0FBQTtZQUNoRixJQUFLLFFBQVEsRUFBRztnQkFDWixJQUFJLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBRSxTQUFTLEdBQUcsV0FBVyxDQUFFLEdBQUcsR0FBRyxJQUFHLE1BQU0sd0JBQWdCLENBQUMsU0FBUyxHQUFHLFdBQVcsQ0FBQyxDQUFBLENBQUE7YUFDOUc7UUFDTCxDQUFDO0tBQUE7SUFFRCxXQUFXLENBQUMsT0FBK0I7UUFDdkMsY0FBSyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsT0FBTyxFQUFFLE9BQU8sQ0FBQyxDQUFBO0lBQ3BDLENBQUM7Q0FFSjtBQUVELGlCQUFTLG1CQUFtQixDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgR2VuZXJhdG9yIH0gZnJvbSAnLi4vLi4vbGliJztcbmltcG9ydCB7IGdldExhdGVzdFZlcnNpb24gfSBmcm9tICcuLi8uLi9saWIvdXRpbHMnO1xuaW1wb3J0IHsgbWVyZ2UgfSBmcm9tICdsb2Rhc2gnO1xuXG5jbGFzcyBCdWlsZFRvb2xzR2VuZXJhdG9yIGV4dGVuZHMgR2VuZXJhdG9yIHtcbiAgICBwa2c6IFBhcnRpYWw8SVBhY2thZ2VKU09OPlxuXG4gICAgdG9vbHM6IHtcbiAgICAgICAgZ3VscDogYm9vbGVhblxuICAgICAgICB3ZWJwYWNrOiBib29sZWFuXG4gICAgICAgIG1vbm9yZXBvOiBib29sZWFuXG4gICAgfSA9IHtcbiAgICAgICAgZ3VscCAgICA6IGZhbHNlLFxuICAgICAgICB3ZWJwYWNrIDogZmFsc2UsXG4gICAgICAgIG1vbm9yZXBvOiBmYWxzZVxuICAgIH1cblxuXG4gICAgYXN5bmMgcHJvbXB0aW5nKCkge1xuICAgICAgICAoYXdhaXQgdGhpcy5jaGVja2JveCgnU2VsZWN0IGJ1aWxkIHRvb2xzJywgWyAnZ3VscCcsICd3ZWJwYWNrJywgJ21vbm9yZXBvJyBdKSkuZm9yRWFjaChvcHRpb24gPT4gdGhpcy50b29sc1sgb3B0aW9uIF0gPSB0cnVlKTtcbiAgICAgICAgaWYgKCB0aGlzLnRvb2xzLmd1bHAgKSB7XG5cbiAgICAgICAgfVxuICAgICAgICBpZiAoIHRoaXMudG9vbHMud2VicGFjayApIHtcbiAgICAgICAgICAgIC8qXG4gICAgICAgICAgICByZWFjdD9cbiAgICAgICAgICAgIGFudGQ/XG4gICAgICAgICAgICAgKi9cbiAgICAgICAgfVxuICAgICAgICBpZiAoIHRoaXMudG9vbHMubW9ub3JlcG8gKSB7XG4gICAgICAgICAgICBsZXQgbW9ub3JlcG9UeXBlID0gYXdhaXQgdGhpcy5saXN0KCdNb25vcmVwbyB0eXBlJywgWyAnbGVybmEnLCAneWFybicsICdib3RoJyBdLCB7IGRlZmF1bHQ6ICdib3RoJyB9KVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgYXN5bmMgd3JpdGluZygpIHtcbiAgICAgICAgdGhpcy5wa2cgPSB0aGlzLmZzLnJlYWRKU09OKHRoaXMuZGVzdGluYXRpb25QYXRoKCdwYWNrYWdlLmpzb24nKSwge1xuICAgICAgICAgICAgZGV2RGVwZW5kZW5jaWVzOiB7fSxcbiAgICAgICAgICAgIGRlcGVuZGVuY2llcyAgIDoge30sXG4gICAgICAgICAgICBzY3JpcHRzICAgICAgICA6IHt9XG4gICAgICAgIH0pXG4gICAgICAgIGF3YWl0IHRoaXMuX2FkZERldkRlcGVuZGVuY3koJ0ByYWRpYy9idWlsZC10b29scycpO1xuICAgICAgICBpZiAoIHRoaXMudG9vbHMuZ3VscCApIHtcbiAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnLmVudicpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnLmVudicpKTtcbiAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnLmVudicpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnLmVudi5leGFtcGxlJykpO1xuICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7XG4gICAgICAgICAgICAgICAgJ2d1bHAnICAgICAgOiAnZ3VscCcsXG4gICAgICAgICAgICAgICAgJ2RldjpidWlsZCcgOiAnZ3VscCBkZXY6YnVpbGQnLFxuICAgICAgICAgICAgICAgICdwcm9kOmJ1aWxkJzogJ2d1bHAgcHJvZDpidWlsZCdcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtZ3VscCcpO1xuICAgICAgICAgICAgaWYgKCB0aGlzLnRvb2xzLndlYnBhY2sgKSB7XG4gICAgICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7XG4gICAgICAgICAgICAgICAgICAgICdkZXY6c2VydmUnIDogJ2d1bHAgZGV2OnNlcnZlJyxcbiAgICAgICAgICAgICAgICAgICAgJ3Byb2Q6c2VydmUnOiAnZ3VscCBwcm9kOnNlcnZlJ1xuICAgICAgICAgICAgICAgIH0pXG4gICAgICAgICAgICAgICAgdGhpcy5mcy5jb3B5KHRoaXMudGVtcGxhdGVQYXRoKCd3ZWJwYWNrLmd1bHBmaWxlLnRzdCcpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnZ3VscGZpbGUudHMnKSk7XG4gICAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnZ3VscGZpbGUudHN0JyksIHRoaXMuZGVzdGluYXRpb25QYXRoKCdndWxwZmlsZS50cycpKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIGlmICggdGhpcy50b29scy53ZWJwYWNrICkge1xuICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7ICd3ZWJwYWNrJzogJ3dlYnBhY2snIH0pXG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtd2VicGFjaycpO1xuXG4gICAgICAgICAgICB0aGlzLmZzLmNvcHkodGhpcy50ZW1wbGF0ZVBhdGgoJ3dlYnBhY2suY29uZmlnLnRzdCcpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnd2VicGFjay5jb25maWcudHMnKSk7XG5cbiAgICAgICAgfVxuICAgICAgICBpZiAoIHRoaXMudG9vbHMubW9ub3JlcG8gKSB7XG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtbW9ub3JlcG8nKTtcbiAgICAgICAgICAgIGxldCBtb25vcmVwb1R5cGUgPSBhd2FpdCB0aGlzLmxpc3QoJ01vbm9yZXBvIHR5cGUnLCBbICdsZXJuYScsICd5YXJuJywgJ2JvdGgnIF0sIHsgZGVmYXVsdDogJ2JvdGgnIH0pXG4gICAgICAgIH1cbiAgICAgICAgdGhpcy5mcy5leHRlbmRKU09OKHRoaXMuZGVzdGluYXRpb25QYXRoKCdwYWNrYWdlLmpzb24nKSwgdGhpcy5wa2cpO1xuICAgIH1cblxuICAgIGluc3RhbGwoKSB7XG4gICAgICAgIHRoaXMueWFybkluc3RhbGwoKTtcbiAgICB9XG5cbiAgICBhc3luYyBfYWRkRGV2RGVwZW5kZW5jeShwYWNrYWdlTmFtZTogc3RyaW5nLCB3aXRoVHlwZTogYm9vbGVhbiA9IGZhbHNlKSB7XG4gICAgICAgIHRoaXMucGtnLmRldkRlcGVuZGVuY2llc1sgcGFja2FnZU5hbWUgXSA9ICdeJyArIGF3YWl0IGdldExhdGVzdFZlcnNpb24ocGFja2FnZU5hbWUpXG4gICAgICAgIGlmICggd2l0aFR5cGUgKSB7XG4gICAgICAgICAgICB0aGlzLnBrZy5kZXZEZXBlbmRlbmNpZXNbICdAdHlwZXMvJyArIHBhY2thZ2VOYW1lIF0gPSAnXicgKyBhd2FpdCBnZXRMYXRlc3RWZXJzaW9uKCdAdHlwZXMvJyArIHBhY2thZ2VOYW1lKVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgYXN5bmMgX2FkZERlcGVuZGVuY3kocGFja2FnZU5hbWU6IHN0cmluZywgd2l0aFR5cGU6IGJvb2xlYW4gPSBmYWxzZSkge1xuICAgICAgICB0aGlzLnBrZy5kZXBlbmRlbmNpZXNbIHBhY2thZ2VOYW1lIF0gPSAnXicgKyBhd2FpdCBnZXRMYXRlc3RWZXJzaW9uKHBhY2thZ2VOYW1lKVxuICAgICAgICBpZiAoIHdpdGhUeXBlICkge1xuICAgICAgICAgICAgdGhpcy5wa2cuZGV2RGVwZW5kZW5jaWVzWyAnQHR5cGVzLycgKyBwYWNrYWdlTmFtZSBdID0gJ14nICsgYXdhaXQgZ2V0TGF0ZXN0VmVyc2lvbignQHR5cGVzLycgKyBwYWNrYWdlTmFtZSlcbiAgICAgICAgfVxuICAgIH1cblxuICAgIF9hZGRTY3JpcHRzKHNjcmlwdHM6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4pIHtcbiAgICAgICAgbWVyZ2UodGhpcy5wa2cuc2NyaXB0cywgc2NyaXB0cylcbiAgICB9XG5cbn1cblxuZXhwb3J0ID0gQnVpbGRUb29sc0dlbmVyYXRvclxuIl19
+\ No newline at end of file
++//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZ2VuZXJhdG9ycy9idWlsZC10b29scy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQSxtQ0FBc0M7QUFDdEMsMkNBQW1EO0FBQ25ELG1DQUErQjtBQUUvQixNQUFNLG1CQUFvQixTQUFRLGVBQVM7SUFBM0M7O1FBR0ksVUFBSyxHQUlEO1lBQ0EsSUFBSSxFQUFNLEtBQUs7WUFDZixPQUFPLEVBQUcsS0FBSztZQUNmLFFBQVEsRUFBRSxLQUFLO1NBQ2xCLENBQUE7SUFvRkwsQ0FBQztJQWpGUyxTQUFTOztZQUNYLENBQUMsTUFBTSxJQUFJLENBQUMsUUFBUSxDQUFDLG9CQUFvQixFQUFFLENBQUUsTUFBTSxFQUFFLFNBQVMsRUFBRSxVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBRSxNQUFNLENBQUUsR0FBRyxJQUFJLENBQUMsQ0FBQztZQUM5SCxJQUFLLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxFQUFHO2FBRXRCO1lBQ0QsSUFBSyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFBRztnQkFDdEI7OzttQkFHRzthQUNOO1lBQ0QsSUFBSyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsRUFBRztnQkFDdkIsSUFBSSxZQUFZLEdBQUcsTUFBTSxJQUFJLENBQUMsSUFBSSxDQUFDLGVBQWUsRUFBRSxDQUFFLE9BQU8sRUFBRSxNQUFNLEVBQUUsTUFBTSxDQUFFLEVBQUUsRUFBRSxPQUFPLEVBQUUsTUFBTSxFQUFFLENBQUMsQ0FBQTthQUN4RztZQUVELElBQUksQ0FBQyxNQUFNLENBQUMsR0FBRyxDQUFDLGFBQWEsRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDL0MsQ0FBQztLQUFBO0lBRUssT0FBTzs7WUFDVCxJQUFJLENBQUMsR0FBRyxHQUFH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LENBQUEsQ0FBQTtZQUNuRixJQUFLLFFBQVEsRUFBRztnQkFDWixJQUFJLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBRSxTQUFTLEdBQUcsV0FBVyxDQUFFLEdBQUcsR0FBRyxJQUFHLE1BQU0sd0JBQWdCLENBQUMsU0FBUyxHQUFHLFdBQVcsQ0FBQyxDQUFBLENBQUE7YUFDOUc7UUFDTCxDQUFDO0tBQUE7SUFFSyxjQUFjLENBQUMsV0FBbUIsRUFBRSxXQUFvQixLQUFLOztZQUMvRCxJQUFJLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBRSxXQUFXLENBQUUsR0FBRyxHQUFHLElBQUcsTUFBTSx3QkFBZ0IsQ0FBQyxXQUFXLENBQUMsQ0FBQSxDQUFBO1lBQ2hGLElBQUssUUFBUSxFQUFHO2dCQUNaLElBQUksQ0FBQyxHQUFHLENBQUMsZUFBZSxDQUFFLFNBQVMsR0FBRyxXQUFXLENBQUUsR0FBRyxHQUFHLElBQUcsTUFBTSx3QkFBZ0IsQ0FBQyxTQUFTLEdBQUcsV0FBVyxDQUFDLENBQUEsQ0FBQTthQUM5RztRQUNMLENBQUM7S0FBQTtJQUVELFdBQVcsQ0FBQyxPQUErQjtRQUN2QyxjQUFLLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxPQUFPLEVBQUUsT0FBTyxDQUFDLENBQUE7SUFDcEMsQ0FBQztDQUVKO0FBRUQsaUJBQVMsbUJBQW1CLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBHZW5lcmF0b3IgfSBmcm9tICcuLi8uLi9saWInO1xuaW1wb3J0IHsgZ2V0TGF0ZXN0VmVyc2lvbiB9IGZyb20gJy4uLy4uL2xpYi91dGlscyc7XG5pbXBvcnQgeyBtZXJnZSB9IGZyb20gJ2xvZGFzaCc7XG5cbmNsYXNzIEJ1aWxkVG9vbHNHZW5lcmF0b3IgZXh0ZW5kcyBHZW5lcmF0b3Ige1xuICAgIHBrZzogUGFydGlhbDxJUGFja2FnZUpTT04+XG5cbiAgICB0b29sczoge1xuICAgICAgICBndWxwOiBib29sZWFuXG4gICAgICAgIHdlYnBhY2s6IGJvb2xlYW5cbiAgICAgICAgbW9ub3JlcG86IGJvb2xlYW5cbiAgICB9ID0ge1xuICAgICAgICBndWxwICAgIDogZmFsc2UsXG4gICAgICAgIHdlYnBhY2sgOiBmYWxzZSxcbiAgICAgICAgbW9ub3JlcG86IGZhbHNlXG4gICAgfVxuXG5cbiAgICBhc3luYyBwcm9tcHRpbmcoKSB7XG4gICAgICAgIChhd2FpdCB0aGlzLmNoZWNrYm94KCdTZWxlY3QgYnVpbGQgdG9vbHMnLCBbICdndWxwJywgJ3dlYnBhY2snLCAnbW9ub3JlcG8nIF0pKS5mb3JFYWNoKG9wdGlvbiA9PiB0aGlzLnRvb2xzWyBvcHRpb24gXSA9IHRydWUpO1xuICAgICAgICBpZiAoIHRoaXMudG9vbHMuZ3VscCApIHtcblxuICAgICAgICB9XG4gICAgICAgIGlmICggdGhpcy50b29scy53ZWJwYWNrICkge1xuICAgICAgICAgICAgLypcbiAgICAgICAgICAgIHJlYWN0P1xuICAgICAgICAgICAgYW50ZD9cbiAgICAgICAgICAgICAqL1xuICAgICAgICB9XG4gICAgICAgIGlmICggdGhpcy50b29scy5tb25vcmVwbyApIHtcbiAgICAgICAgICAgIGxldCBtb25vcmVwb1R5cGUgPSBhd2FpdCB0aGlzLmxpc3QoJ01vbm9yZXBvIHR5cGUnLCBbICdsZXJuYScsICd5YXJuJywgJ2JvdGgnIF0sIHsgZGVmYXVsdDogJ2JvdGgnIH0pXG4gICAgICAgIH1cblxuICAgICAgICB0aGlzLmNvbmZpZy5zZXQoJ2J1aWxkX3Rvb2xzJywgdGhpcy50b29scyk7XG4gICAgfVxuXG4gICAgYXN5bmMgd3JpdGluZygpIHtcbiAgICAgICAgdGhpcy5wa2cgPSB0aGlzLmZzLnJlYWRKU09OKHRoaXMuZGVzdGluYXRpb25QYXRoKCdwYWNrYWdlLmpzb24nKSwge1xuICAgICAgICAgICAgZGV2RGVwZW5kZW5jaWVzOiB7fSxcbiAgICAgICAgICAgIGRlcGVuZGVuY2llcyAgIDoge30sXG4gICAgICAgICAgICBzY3JpcHRzICAgICAgICA6IHt9XG4gICAgICAgIH0pXG4gICAgICAgIGF3YWl0IHRoaXMuX2FkZERldkRlcGVuZGVuY3koJ0ByYWRpYy9idWlsZC10b29scycpO1xuICAgICAgICBpZiAoIHRoaXMudG9vbHMuZ3VscCApIHtcbiAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnLmVudicpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnLmVudicpKTtcbiAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnLmVudicpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnLmVudi5leGFtcGxlJykpO1xuICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7XG4gICAgICAgICAgICAgICAgJ2d1bHAnICAgICAgOiAnZ3VscCcsXG4gICAgICAgICAgICAgICAgJ2RldjpidWlsZCcgOiAnZ3VscCBkZXY6YnVpbGQnLFxuICAgICAgICAgICAgICAgICdwcm9kOmJ1aWxkJzogJ2d1bHAgcHJvZDpidWlsZCdcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtZ3VscCcpO1xuICAgICAgICAgICAgaWYgKCB0aGlzLnRvb2xzLndlYnBhY2sgKSB7XG4gICAgICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7XG4gICAgICAgICAgICAgICAgICAgICdkZXY6c2VydmUnIDogJ2d1bHAgZGV2OnNlcnZlJyxcbiAgICAgICAgICAgICAgICAgICAgJ3Byb2Q6c2VydmUnOiAnZ3VscCBwcm9kOnNlcnZlJ1xuICAgICAgICAgICAgICAgIH0pXG4gICAgICAgICAgICAgICAgdGhpcy5mcy5jb3B5KHRoaXMudGVtcGxhdGVQYXRoKCd3ZWJwYWNrLmd1bHBmaWxlLnRzdCcpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnZ3VscGZpbGUudHMnKSk7XG4gICAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgICAgIHRoaXMuZnMuY29weSh0aGlzLnRlbXBsYXRlUGF0aCgnZ3VscGZpbGUudHN0JyksIHRoaXMuZGVzdGluYXRpb25QYXRoKCdndWxwZmlsZS50cycpKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIGlmICggdGhpcy50b29scy53ZWJwYWNrICkge1xuICAgICAgICAgICAgdGhpcy5fYWRkU2NyaXB0cyh7ICd3ZWJwYWNrJzogJ3dlYnBhY2snIH0pXG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtd2VicGFjaycpO1xuXG4gICAgICAgICAgICB0aGlzLmZzLmNvcHkodGhpcy50ZW1wbGF0ZVBhdGgoJ3dlYnBhY2suY29uZmlnLnRzdCcpLCB0aGlzLmRlc3RpbmF0aW9uUGF0aCgnd2VicGFjay5jb25maWcudHMnKSk7XG5cbiAgICAgICAgfVxuICAgICAgICBpZiAoIHRoaXMudG9vbHMubW9ub3JlcG8gKSB7XG4gICAgICAgICAgICBhd2FpdCB0aGlzLl9hZGREZXZEZXBlbmRlbmN5KCdAcmFkaWMvYnVpbGQtdG9vbHMtbW9ub3JlcG8nKTtcbiAgICAgICAgICAgIGxldCBtb25vcmVwb1R5cGUgPSBhd2FpdCB0aGlzLmxpc3QoJ01vbm9yZXBvIHR5cGUnLCBbICdsZXJuYScsICd5YXJuJywgJ2JvdGgnIF0sIHsgZGVmYXVsdDogJ2JvdGgnIH0pXG4gICAgICAgIH1cbiAgICAgICAgdGhpcy5mcy5leHRlbmRKU09OKHRoaXMuZGVzdGluYXRpb25QYXRoKCdwYWNrYWdlLmpzb24nKSwgdGhpcy5wa2cpO1xuICAgIH1cblxuICAgIGluc3RhbGwoKSB7XG4gICAgICAgIHRoaXMueWFybkluc3RhbGwoKTtcbiAgICB9XG5cbiAgICBhc3luYyBfYWRkRGV2RGVwZW5kZW5jeShwYWNrYWdlTmFtZTogc3RyaW5nLCB3aXRoVHlwZTogYm9vbGVhbiA9IGZhbHNlKSB7XG4gICAgICAgIHRoaXMucGtnLmRldkRlcGVuZGVuY2llc1sgcGFja2FnZU5hbWUgXSA9ICdeJyArIGF3YWl0IGdldExhdGVzdFZlcnNpb24ocGFja2FnZU5hbWUpXG4gICAgICAgIGlmICggd2l0aFR5cGUgKSB7XG4gICAgICAgICAgICB0aGlzLnBrZy5kZXZEZXBlbmRlbmNpZXNbICdAdHlwZXMvJyArIHBhY2thZ2VOYW1lIF0gPSAnXicgKyBhd2FpdCBnZXRMYXRlc3RWZXJzaW9uKCdAdHlwZXMvJyArIHBhY2thZ2VOYW1lKVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgYXN5bmMgX2FkZERlcGVuZGVuY3kocGFja2FnZU5hbWU6IHN0cmluZywgd2l0aFR5cGU6IGJvb2xlYW4gPSBmYWxzZSkge1xuICAgICAgICB0aGlzLnBrZy5kZXBlbmRlbmNpZXNbIHBhY2thZ2VOYW1lIF0gPSAnXicgKyBhd2FpdCBnZXRMYXRlc3RWZXJzaW9uKHBhY2thZ2VOYW1lKVxuICAgICAgICBpZiAoIHdpdGhUeXBlICkge1xuICAgICAgICAgICAgdGhpcy5wa2cuZGV2RGVwZW5kZW5jaWVzWyAnQHR5cGVzLycgKyBwYWNrYWdlTmFtZSBdID0gJ14nICsgYXdhaXQgZ2V0TGF0ZXN0VmVyc2lvbignQHR5cGVzLycgKyBwYWNrYWdlTmFtZSlcbiAgICAgICAgfVxuICAgIH1cblxuICAgIF9hZGRTY3JpcHRzKHNjcmlwdHM6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4pIHtcbiAgICAgICAgbWVyZ2UodGhpcy5wa2cuc2NyaXB0cywgc2NyaXB0cylcbiAgICB9XG5cbn1cblxuZXhwb3J0ID0gQnVpbGRUb29sc0dlbmVyYXRvclxuIl19
+\ No newline at end of file
+Index: packages/generator-radic/src/generators/build-tools/index.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- packages/generator-radic/src/generators/build-tools/index.ts	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ packages/generator-radic/src/generators/build-tools/index.ts	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -30,6 +30,8 @@
+         if ( this.tools.monorepo ) {
+             let monorepoType = await this.list('Monorepo type', [ 'lerna', 'yarn', 'both' ], { default: 'both' })
+         }
++
++        this.config.set('build_tools', this.tools);
+     }
+ 
+     async writing() {
+Index: tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- tsconfig.json	(revision 9ffafe75359f97dfcdcc09f75215cf6fcf28026b)
++++ tsconfig.json	(revision 02e596b5d17dac4aa33f6106b7f50c5eead1df0a)
+@@ -15,7 +15,9 @@
+         "allowSyntheticDefaultImports": true,
+         "emitDecoratorMetadata": true,
+         "experimentalDecorators": true,
+-        "jsx": "preserve"
++        "sourceMap": true,
++        "allowJs": true,
++        "jsx": "react"
+     },
+     "include": [
+         //        "packages",

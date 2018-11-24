@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/reset-evals/src" isTestSource="false" packagePrefix="@radic/reset-evals" />
       <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/src" isTestSource="false" packagePrefix="@radic/console-colors" />
       <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/typestyled-components/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/apps/react-site/dev" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/dist" />
@@ -30,9 +31,11 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/reset-evals/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/example" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/.nyc_output" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/examples" />
     </content>
+    <content url="file://$MODULE_DIR$/packages/typestyled-components/examples/src" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
