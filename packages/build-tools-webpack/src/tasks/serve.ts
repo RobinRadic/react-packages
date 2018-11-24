@@ -4,13 +4,13 @@ import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 
 
-async function preServe(chain: Chain, host: string = 'localhost', defaultPort: number = 8336) {
+export async function preServe(chain: Chain, host: string = 'localhost', defaultPort: number = 8336) {
     const port = await utils.choosePort(host, 8336);
     prepareDevServer(chain, host, port);
     enableHMR(chain)
 }
 
-async function startServer(chain: Chain) {
+export async function startServer(chain: Chain) {
     let host = chain.data.get<string>('host');
     let port = chain.data.get<number>('port');
     let url  = chain.data.get('url');

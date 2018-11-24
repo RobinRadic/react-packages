@@ -17,6 +17,7 @@ const execOptions: ExecSyncOptionsWithStringEncoding = {
         'ignore' //stderr
     ]
 };
+
 export function choosePort(host, defaultPort) {
     return detect(defaultPort, host).then(port => new Promise(resolve => {
             if ( port === defaultPort ) {
@@ -41,8 +42,9 @@ export function choosePort(host, defaultPort) {
                 };
                 inquirer.prompt(question).then((answer: any) => {
                     if ( answer.shouldKillProcess ) {
-                        execSync('kill ' + getProcessIdOnPort(defaultPort));
-                        resolve(null);
+                        execSync('kill ' + getProcessIdOnPort(port));
+                        setTimeout(() => resolve(null), 2000);
+
                     } else {
                         resolve(null);
                     }

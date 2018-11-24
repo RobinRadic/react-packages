@@ -6,13 +6,15 @@
         "lerna": "lerna",
         "build": "gulp build",
         "watch": "gulp watch",
+        "test": "gulp test",
         "dev:build": "lerna run dev:build",
         "prod:build": "lerna run prod:build",
         "dev:watch": "lerna run dev:watch"
     },
     "workspaces": {
         "packages": [
-            "packages/*"
+            "packages/*",
+            "packages/typestyled-components/example"
         ],
         "nohoist": [
             "react-site/babel-polyfill",
@@ -20,12 +22,14 @@
             "react-site/@types/**",
             "**/react-site",
             "**/react-site/**",
-            "@radic/build-tools-webpack/babel-polyfill"
+            "@radic/build-tools-webpack/babel-polyfill",
+            "typestyled-components-example/**"
         ]
     },
     "resolutions": {
         "trucolor": "^0.7.1",
-        "term-ng": "^0.8.1"
+        "term-ng": "^0.8.1",
+        "babel-jest": "23.6.0"
     },
     "dependencies": {
         "@types/dotenv": "^4.0.3",

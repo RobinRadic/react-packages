@@ -7,7 +7,7 @@ import { mixin, utils } from './packages/build-tools';
 import { GulpEnvMixin, GulpInteractiveMixin } from './packages/build-tools-gulp';
 import { Monorepo, Package } from './packages/build-tools-monorepo';
 
-const each = <T>(items: T[], fn: (item:T) => void) => items.reduce((promise, item) => promise.then(() => fn(item)), Promise.resolve());
+const each = <T>(items: T[], fn: (item: T) => void) => items.reduce((promise, item) => promise.then(() => fn(item)), Promise.resolve());
 
 const monorepo                       = new Monorepo({ cwd: __dirname });
 const exec                           = (cmd: string, options: Partial<ExecSyncOptionsWithStringEncoding> = {}) => {
@@ -46,10 +46,12 @@ export class Gulpfile {
 
     @Task('version') version() { return this.versionPackages()}
 
+    @Task('test') test() { return this.testPackages()}
+
     @Task('pick')
     @Task('default')
     async pick() {
-        let choices  = [ 'build', 'publish', 'version' ];
+        let choices  = [ 'build', 'publish', 'version','test' ];
         let task     = await this.list('Select option', choices);
         let packages = await this.selectPackages(true);
 
@@ -59,7 +61,16 @@ export class Gulpfile {
             await this.publishPackages(packages);
         } else if ( task === 'version' ) {
             await this.versionPackages(packages);
+        } else if ( task === 'test' ) {
+            await this.testPackages(packages);
         }
+    }
+
+    protected async testPackages(packages?: Package[]) {
+        packages = packages || await this.selectPackages(true);
+        each(packages, async (pkg) => {
+            this.testPackage(pkg);
+        });
     }
 
     protected async versionPackages(packages?: Package[]) {
@@ -110,6 +121,10 @@ export class Gulpfile {
     }
 
     protected async buildPackage(pkg: Package, cmd: string = 'prod:build') {
+        cmds.run(cmd, pkg.name)
+    }
+
+    protected async testPackage(pkg: Package, cmd: string = 'test') {
         cmds.run(cmd, pkg.name)
     }
 
