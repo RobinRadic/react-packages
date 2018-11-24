@@ -4,14 +4,9 @@ import { style } from './init';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import { classes } from 'typestyle';
 
-export interface StyledComponent extends ComponentClass<any> {
-    styles?: Record<string, CSS>
-    style?: CSS
-}
-
 
 export const Styled = () => {
-    return <T extends StyledComponent>(Component: T): T => {
+    return <T extends Styled.Component>(Component: T): T => {
 
         class WrappedComponent extends React.Component<{ classNames?: { [ key: string ]: string } }> {
             render() {
@@ -56,4 +51,9 @@ export namespace Styled {
     export type Styles = Record<string, Style>
     export type Props = { classNames?: Record<string, string>, className?: string }
     export type StylableProps = Props & { style?: React.CSSProperties }
+
+    export interface Component<PROPS = {}> extends ComponentClass<PROPS> {
+        styles?: Styles
+        style?: Style
+    }
 }

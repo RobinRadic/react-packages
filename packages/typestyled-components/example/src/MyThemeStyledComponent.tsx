@@ -11,10 +11,11 @@ const foobar = {
 export class MyThemeStyledComponent extends React.Component<Partial<Styled.StylableProps>> {
     props: Partial<Styled.StylableProps>;
 
-    static styles: Styled.Styles = {
-        foo: () => ({
+    //: Record<string, FactoryStyles<{}, Theme>>
+    static styles = {
+        foo: ({ theme }) => ({
             ...foobar,
-            background: '#AAA',
+            background: theme.backgroundColor,
             color     : 'blue'
         }),
         bar: {
@@ -25,6 +26,7 @@ export class MyThemeStyledComponent extends React.Component<Partial<Styled.Styla
     }
 
     render() {
+
         const { classNames } = this.props
         return (
             <div>

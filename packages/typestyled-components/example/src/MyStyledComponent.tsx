@@ -11,7 +11,7 @@ const foobar = {
 export class MyStyledComponent extends React.Component<Partial<Styled.StylableProps>> {
     props: Partial<Styled.StylableProps>;
 
-    static styles: Styled.Styles = {
+    static styles = {
         foo: {
             ...foobar,
             background: '#AAA',
@@ -21,7 +21,10 @@ export class MyStyledComponent extends React.Component<Partial<Styled.StylablePr
             ...foobar,
             background: '#AAA',
             color     : 'blue'
-        }
+        },
+        hank: ({theme}) => ({
+            background: theme
+        })
     }
 
     render() {
