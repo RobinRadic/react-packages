@@ -8,6 +8,11 @@ export interface DirectoryOptions extends FSItemOptions {
 }
 
 export class Directory<T extends DirectoryOptions = DirectoryOptions> extends FSItem<T> {
+    protected _directory: Directory;
+
+    constructor(opts: string | T) {
+        super(opts);
+    }
 
     public copy(dest: string): Directory<T> {
         dest = resolve(dest);
@@ -38,4 +43,10 @@ export class Directory<T extends DirectoryOptions = DirectoryOptions> extends FS
         return existsSync(resolve(this.path, path))
     }
 
+    get directory(): Directory {
+        if ( ! this._directory ) {
+            this._directory = new Directory(this.dirname);
+        }
+        return this._directory
+    }
 }

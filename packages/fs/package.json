@@ -1,6 +1,6 @@
 {
     "name": "@radic/fs",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Files and directories as objects",
     "license": "MIT",
     "main": "dist/index.js",

@@ -1,6 +1,5 @@
 import { basename, dirname, extname, relative, resolve } from 'path';
 import { existsSync, Stats, statSync } from 'fs';
-import { Directory } from './Directory';
 
 
 export interface FSItemOptions {
@@ -20,12 +19,11 @@ export interface FSItemOptions {
     base?: string;
 }
 
-export abstract class FSItem<T extends FSItemOptions = FSItemOptions> {
-    cwd: string = process.cwd();
+export class FSItem<T extends FSItemOptions = FSItemOptions> {
+    cwd: string
     path: string
     base: string
 
-    protected _directory: Directory
 
     constructor(opts: T | string) {
         let isstr = typeof opts === 'string';
@@ -34,9 +32,13 @@ export abstract class FSItem<T extends FSItemOptions = FSItemOptions> {
         this.base = resolve((opts as any).base || this.dirname)
     }
 
-    abstract copy(path: string): FSItem<T>
+    copy(path: string): FSItem<T> {
+        throw new Error('not implemetedd')
+    }
 
-    abstract move(path: string): this;
+    move(path: string): this {
+        throw new Error('not implemetedd')
+    }
 
     basePath(...path: string[]) {return resolve(this.base, ...path)}
 
@@ -56,10 +58,4 @@ export abstract class FSItem<T extends FSItemOptions = FSItemOptions> {
 
     get stat(): Stats { return statSync(this.path)}
 
-    get directory(): Directory {
-        if ( ! this._directory ) {
-            this._directory = new Directory({ path: this.dirname });
-        }
-        return this._directory
-    }
 }

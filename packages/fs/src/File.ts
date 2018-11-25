@@ -2,15 +2,20 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { mkdirpSync } from 'fs-extra';
 import { FSItem, FSItemOptions } from './FSItem';
+import { Directory } from './Directory';
 
 
 export interface FileOptions extends FSItemOptions {
 }
 
-
 export class File<T extends FSItemOptions = FSItemOptions> extends FSItem<T> {
     protected _content: string
     protected _originalContent: string
+    protected _directory: Directory
+
+    constructor(opts: string | T) {
+        super(opts);
+    }
 
     /**
      * Copies this file to the given destination. The returned value is a new instance of this class
@@ -81,5 +86,12 @@ export class File<T extends FSItemOptions = FSItemOptions> extends FSItem<T> {
             this._content         = this._originalContent
         }
         return this._content;
+    }
+
+    get directory(): Directory {
+        if ( ! this._directory ) {
+            this._directory = new Directory(this.dirname);
+        }
+        return this._directory
     }
 }
