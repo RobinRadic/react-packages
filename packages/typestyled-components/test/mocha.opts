@@ -1,5 +1,5 @@
 --ui mocha-typescript
 --require ts-node/register
 --require source-map-support/register
---require ./test/setup.ts
+--require ./test/_support/setup.ts
 test/**/*.test.+(ts|tsx|js)

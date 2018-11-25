@@ -60,15 +60,22 @@ declare namespace Mocha {
     interface Context {
         _runnable: Mocha.Runnable
     }
-    interface Runnable{
+
+    interface Runnable {
         _runnable: Mocha.Runnable
     }
 
 }
 
 declare namespace Chai {
+    interface Assert {
+        matchSnapshot(value: any)
+
+        matchSnapshot(name: string, value: any, replaceName?: boolean)
+    }
+
     interface Assertion {
-        matchSnapshot(name?): void;
+        matchSnapshot(name?: string, replaceName?: boolean): void;
     }
 }
 //

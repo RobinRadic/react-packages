@@ -5,13 +5,12 @@ import { active, child, cssSelector, firstChild, hover, lastChild, visited } fro
 import { spy } from 'sinon';
 import { BaseClass } from './_support/BaseClass';
 
-
 @suite('CSS selector helpers')
 class CreateThemeProviderTest extends BaseClass {
     static css: CSS[] = [ {
         background : 'none',
         borderColor: 'aqua',
-        $nest      : { '.title': { color: '#333333' } }
+        $nest      : { '.title': { color: '#333' } }
     }, {
         fontSize: 15,
         $nest   : { '&:hover': { textDecoration: 'underline' } }
@@ -19,30 +18,19 @@ class CreateThemeProviderTest extends BaseClass {
 
     @test 'base css selector function'() {
         let selector = spy(cssSelector('html > body'))
-        selector
-            .should.not.be.undefined
-            .and.is.instanceOf(Proxy);
-
+        selector.should.not.be.undefined.and.is.instanceOf(Proxy);
         let result = selector(...CreateThemeProviderTest.css)
-        selector
-            .should.calledOnceWith(...CreateThemeProviderTest.css)
-            .and.returned(result);
-
-        result.should.not.be.undefined.and.matchSnapshot('cssSelector');
+        selector.should.calledOnceWith(...CreateThemeProviderTest.css).and.returned(result);
+        result.should.matchSnapshot('cssSelector');
     }
 
     @test 'other css selector function'() {
         const functions = { active, child, firstChild, hover, lastChild, visited }
-        const keys      = Object.keys(functions);
-
-        for ( let key in functions ) {
-            test(key, () => {
-                let fn     = spy(functions[ key ]);
-                let result = fn(...CreateThemeProviderTest.css);
-
-                fn.should.be.calledOnceWith(...CreateThemeProviderTest.css).and.returned(result);
-                result.should.not.be.undefined.and.matchSnapshot(key)
-            })
+        for ( let name in functions ) {
+            let fn     = spy(functions[ name ]);
+            let result = fn(...CreateThemeProviderTest.css);
+            fn.should.be.calledOnceWith(...CreateThemeProviderTest.css).and.returned(result);
+            result.should.matchSnapshot(name)
         }
     }
 }
