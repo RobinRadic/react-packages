@@ -31,6 +31,8 @@ declare namespace NodeJS {
         window: DOMWindow
         document: Document
         navigator: { userAgent: string }
+        requestAnimationFrame:(cb) => any
+        cancelAnimationFrame:(id) => any
     }
 }
 

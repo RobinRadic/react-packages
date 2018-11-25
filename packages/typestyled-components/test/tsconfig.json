@@ -3,7 +3,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "lib": ["es5", "es6", "es7", "dom"],
+        "lib": ["es5", "es6", "es7", "dom", "es2017.object"],
         "sourceMap": true,
         "allowJs": true,
         "jsx": "react",
