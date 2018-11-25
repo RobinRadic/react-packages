@@ -25,7 +25,7 @@ export function factory<HTMLELEMENT extends HTMLElement = HTMLElement>(tag: stri
                 const { children, className, ...rest } = this.props as any;
                 const cssObjects                       = styles.map(obj => {
                     if ( typeof obj === 'function' ) {
-                        return obj({ ...rest, theme: this.context.theme })
+                        return (obj as any)({ ...rest, theme: this.context.theme })
                     }
                     return obj
                 }).reduce((acc, cur) => acc.concat(cur), [])

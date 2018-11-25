@@ -1,8 +1,11 @@
 import { types } from 'typestyle';
 import React from 'react';
-import CSS = types.NestedCSSProperties;
+import _CSS = types.NestedCSSProperties;
 
-export { CSS }
+export interface Theme {}
+
+// export { CSS }
+export type CSS<T extends Theme = {}, P = {}> = _CSS | (<THEME = T, PROPS = P>(props: { theme: THEME } & PROPS) => _CSS) & types.NestedCSSProperties;
 
 export type Props<P, H> = P & H & { theme?: string }
 export type Styler<P, H> = (params: Props<P, H>) => CSS[]

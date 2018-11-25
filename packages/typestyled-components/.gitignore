@@ -16,3 +16,4 @@ yarn-error.log
 .awcache
 .rpt2_cache
 .nyc_output
+/coverage

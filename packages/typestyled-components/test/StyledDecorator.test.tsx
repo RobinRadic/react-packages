@@ -1,17 +1,12 @@
+///<reference path="../types/globals.d.ts"/>
 import { suite, test } from 'mocha-typescript';
 import { shallow } from 'enzyme'
+import * as React from 'react';
+import { BaseClass } from './_support/BaseClass';
 import { StyledComponentFixture } from './_fixtures/StyledComponentFixture';
-import React from 'react';
-import { setup } from './setup'
 
 @suite('StyledDecoratorTest')
-class StyledDecoratorTest {
-    static before() {
-        setup();
-    }
-
-    before() {}
-
+class StyledDecoratorTest extends BaseClass {
     @test 'should be able to test some simple shit'() {
         let a = {
             name    : 'foo',
@@ -27,8 +22,8 @@ class StyledDecoratorTest {
     @test 'should mount components with that have the Styled decorator'() {
         const wrapper = shallow(<StyledComponentFixture/>);
         let p         = wrapper.props();
-
+        let c         = expect(wrapper.props()); //.to.be.undefined; //equal(StyledComponentFixture)
         wrapper.unmount();
-        // expect(wrapper.props()).to.equal(StyledComponentFixture)
+
     }
 }

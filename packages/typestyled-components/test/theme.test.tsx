@@ -1,13 +1,13 @@
+///<reference path="../types/globals.d.ts"/>
 import { suite, test } from 'mocha-typescript';
-import { assert, expect } from 'chai'
 import React from 'react';
 import { createThemeProvider } from '../src';
 import { mount } from 'enzyme';
 import { StyledComponentFixture } from './_fixtures/StyledComponentFixture';
-import { setup } from './setup'
+import { BaseClass } from './_support/BaseClass';
 
 @suite('Theme Provider')
-class CreateThemeProviderTest {
+class CreateThemeProviderTest extends BaseClass {
     static themes = {
         blue  : {
             background: 'blue'
@@ -17,18 +17,12 @@ class CreateThemeProviderTest {
         }
     }
 
-    static before() {
-        setup()
-    }
-
-    before() {}
-
-    @test 'it should be possible to create a ThemeProvider with multiple themes'() {
+    @test 'it should create a ThemeProvider with multiple themes'() {
         const Provider = createThemeProvider(CreateThemeProviderTest.themes, 'blue')
         assert.isFunction(Provider.prototype.render) //include.keys([ 'render', 'getChildContext' ], 'render or getChildContext members not found');
     }
 
-    @test 'it should be mountable'() {
+    @test 'it should mount'() {
         const Provider = createThemeProvider(CreateThemeProviderTest.themes, 'blue')
         const wrapper  = mount(<Provider theme="blue"><StyledComponentFixture>child</StyledComponentFixture></Provider>);
         expect(wrapper.prop('theme')).to.equal('blue')
