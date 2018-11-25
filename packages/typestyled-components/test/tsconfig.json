@@ -2,10 +2,9 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "lib": ["es5", "es6", "es7", "dom", "es2017.object"],
         "sourceMap": true,
-        "allowJs": true,
         "jsx": "react",
         "moduleResolution": "node",
         "noImplicitReturns": false,
@@ -16,14 +15,9 @@
         "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": false,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
+        "esModuleInterop": false,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "typeRoots": [
-            "../node_modules",
-            "../../../node_modules",
-            "../types"
-        ]
+        "experimentalDecorators": true
     },
     "include": [
         "*",

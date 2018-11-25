@@ -42,7 +42,7 @@ export const Styled = () => {
                 styledProps.className = classes(...className)
 
 
-                const passedProps = Object.assign({}, ...props, styledProps)
+                const passedProps = Object.assign({}, props, styledProps)
                 return React.createElement(Component as any, passedProps, children);
             }
         }

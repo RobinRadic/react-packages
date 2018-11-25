@@ -1,12 +1,14 @@
 import { suite, test } from 'mocha-typescript';
-import { mount } from 'enzyme'
-import { expect } from 'chai'
+import { shallow } from 'enzyme'
 import { StyledComponentFixture } from './_fixtures/StyledComponentFixture';
 import React from 'react';
+import { setup } from './setup'
 
-@suite('Example')
-class ExampleTest {
-    static before() {}
+@suite('StyledDecoratorTest')
+class StyledDecoratorTest {
+    static before() {
+        setup();
+    }
 
     before() {}
 
@@ -23,7 +25,10 @@ class ExampleTest {
 
 
     @test 'should mount components with that have the Styled decorator'() {
-        const wrapper = mount(<StyledComponentFixture/>);
-        expect(wrapper.props()).to.equal({})
+        const wrapper = shallow(<StyledComponentFixture/>);
+        let p         = wrapper.props();
+
+        wrapper.unmount();
+        // expect(wrapper.props()).to.equal(StyledComponentFixture)
     }
 }

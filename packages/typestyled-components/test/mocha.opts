@@ -1,4 +1,7 @@
 --ui mocha-typescript
 --require ts-node/register
---require ./test/setup.ts
 --require source-map-support/register
+--require chai/register-assert
+--require chai/register-expect
+--require chai/register-should
+--require ./test/setup.ts
