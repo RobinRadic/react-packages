@@ -2,11 +2,11 @@ import { merge } from 'lodash';
 import { Chain, InitBaseOptions } from './Chain';
 
 export function initBase(options: InitBaseOptions): Chain {
-    options = merge({}, options, <InitBaseOptions>{
+    options = merge({}, <InitBaseOptions>{
         sourceDir: 'src',
         outputDir: options.mode === 'development' ? 'dev' : 'dist',
         entryName: 'main'
-    })
+    }, options)
 
 
     const chain = new Chain(options);

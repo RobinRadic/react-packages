@@ -1,0 +1,69 @@
+{
+    "name": "@radic/util",
+    "version": "2.8.0",
+    "description": "Utilities for node / browser",
+    "keywords": [
+        "util"
+    ],
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "jsnext:main": "dist/index.es.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "clean": "rimraf dist/ .rpt2_cache .nyc_output ./src/**/*.{js,d.ts}",
+        "env:dev": "NODE_ENV=development",
+        "env:prod": "NODE_ENV=production",
+        "dev:build": "npm-run-all env:dev clean build",
+        "prod:build": "npm-run-all env:prod clean build",
+        "dev:watch": "npm-run-all env:dev clean build",
+        "test": "nyc mocha --opts ./test/mocha.opts",
+        "build": "gulp build"
+    },
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "repository": "https://github.com/robinradic/npm-packages",
+    "homepage": "http://robin.radic.nl/npm-packages/util",
+    "bugs": {
+        "email": "rradic@hotmail.com",
+        "url": "https://github.com/robinradic/npm-packages/issues"
+    },
+    "author": "Robin Radic <rradic@hotmail.com> (https://radic.nl/)",
+    "license": "MIT",
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "types/**/*.d.ts",
+        "lib/**/*.js",
+        "umd/*.js",
+        "es/**/*.js"
+    ],
+    "dependencies": {
+        "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.118",
+        "source-map-support": "^0.5.0",
+        "@types/node": "^10.12.10",
+        "temp-dir": "^1.0.0",
+        "npm-run-all": "^4.1.3",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.1.3",
+        "gulp": "^3.9.1",
+        "gulpclass": "^0.2.0",
+        "rollup": "^0.67.3",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-livereload": "^0.6.0",
+        "rollup-plugin-node-resolve": "^3.4.0",
+        "rollup-plugin-replace": "^2.1.0",
+        "rollup-plugin-serve": "^0.6.0",
+        "rollup-plugin-typescript": "^1.0.0",
+        "rollup-plugin-typescript2": "^0.18.0",
+        "rollup-plugin-uglify": "^6.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.0",
+        "rollup-plugin-babili": "^3.1.1",
+        "rollup-plugin-url": "^2.0.1",
+        "rollup-plugin-postcss-modules": "1.0.10"
+    }
+}

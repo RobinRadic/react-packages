@@ -1,0 +1,21 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "declaration": true,
+        "target": "es6",
+        "module": "commonjs",
+        "allowJs": false,
+        "sourceMap": false,
+        "inlineSourceMap": true,
+        "inlineSources": true
+    },
+    "include": [
+        "lib"
+    ],
+    "exclude": [
+        "node_modules",
+        "*.js",
+        "*.d.ts"
+    ],
+    "compileOnSave": true
+}

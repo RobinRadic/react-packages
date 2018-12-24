@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="tsc" pattern="file[at-radic]:packages/fs/src//*||file:packages/fs/.gitignore||file:packages/fs/.npmignore||file:packages/fs/package.json||file:packages/fs/README.md||file:packages/fs/tsconfig.json||file[at-radic]:packages/commando/src//*||file[at-radic]:apps/demo//*||file[at-radic]:packages/reset-evals//*||file[at-radic]:packages/commando//*||file[at-radic]:packages/fs/lib//*" />
+</component>

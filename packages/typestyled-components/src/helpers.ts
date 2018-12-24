@@ -17,5 +17,5 @@ export const lastChild  = (...objects: CSS[]) => cssSelector('&>*:last-child')(.
 
 export const active  = (...objects: CSS[]) => cssSelector('&:active')(...objects)
 export const hover   = (...objects: CSS[]) => cssSelector('&:hover')(...objects)
-export const focus   = (...objects: CSS[]) => cssSelector('&:focus')(...objects)
+// export const focus   = (...objects: CSS[]) => cssSelector('&:focus')(...objects)
 export const visited = (...objects: CSS[]) => cssSelector('&:visited')(...objects)

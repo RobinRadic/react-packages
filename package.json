@@ -9,10 +9,14 @@
         "test": "gulp test",
         "dev:build": "lerna run dev:build",
         "prod:build": "lerna run prod:build",
-        "dev:watch": "lerna run dev:watch"
+        "dev:watch": "lerna run dev:watch",
+
+        "commando": "cd packages/commando && yarn",
+        "reset-evals": "cd packages/reset-evals && yarn"
     },
     "workspaces": {
         "packages": [
+            "apps/*",
             "packages/*",
             "packages/typestyled-components/example"
         ],

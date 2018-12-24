@@ -7,14 +7,17 @@
     "jsnext:main": "dist/index.es.js",
     "typings": "dist/index.d.ts",
     "scripts": {
-        "clean": "rm -rf dist/ .rpt2_cache",
-        "env:dev": "NODE_ENV=development",
-        "env:prod": "NODE_ENV=production",
+        "clean": "rimraf dist/ .rpt2_cache/ .nyc_output/ coverage/",
+        "env:test": "cross-env NODE_ENV=development",
+        "env:dev": "cross-env NODE_ENV=development",
+        "env:prod": "cross-env NODE_ENV=production",
         "dev:build": "npm-run-all env:dev clean build",
+        "dev:watch": "npm-run-all env:dev clean watch",
         "prod:build": "npm-run-all env:prod clean build",
-        "dev:watch": "npm-run-all env:dev clean build",
+        "pretest": "npm-run-all env:test",
         "test": "nyc mocha --opts ./test/mocha.opts",
-        "build": "gulp build"
+        "build": "gulp build",
+        "watch": "tsc -p src --outDir dist --declaration --watch"
     },
     "engines": {
         "node": ">=8",
@@ -33,7 +36,7 @@
         "react": "^15.0.0 || ^16.0.0",
         "react-dom": "^15.0.0 || ^16.0.0"
     },
-    "nyc32": {
+    "nyc": {
         "include": [
             "src/**/*.ts",
             "src/**/*.tsx"
@@ -53,6 +56,7 @@
         "instrument": true
     },
     "devDependencies": {
+        "@radic/fs": "^0.0.1",
         "pretty-format": "^23.6.0",
         "@types/pretty-format": "^20.0.0",
         "@types/hoist-non-react-statics": "^3.0.1",
@@ -72,12 +76,11 @@
         "sinon": "^7.1.1",
         "sinon-chai": "^3.1.0",
         "mocha": "5.2.*",
+        "snap-shot-core": "^7.1.10",
         "snap-shot-it": "^6.2.5",
         "expect": "^1.20.2",
+        "cross-env": "^5.2.0",
         "@types/expect": "^1.20.3",
-        "jest-snapshot": "^22.4.0",
-        "chai-snapshot-tests": "^0.6.0",
-        "chai-karma-snapshot": "^0.8.0",
         "mocha-typescript": "1.1.*",
         "mochawesome-report-generator": "^3.1.2",
         "@types/mocha": "^5.2.0",

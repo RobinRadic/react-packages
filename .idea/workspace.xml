@@ -1,7 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d60629d-6a3c-446b-a045-cb4a9094e1bf" name="Default Changelist" comment="" />
+    <list default="true" id="2d60629d-6a3c-446b-a045-cb4a9094e1bf" name="Default Changelist" comment="add @radic/fs">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/test_ts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/tsc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/demo/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/demo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/demo/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/demo/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/commando/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/commando/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/commando/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/commando/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/commando/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/typestyled-components/test/factory.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/at-radic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/at-radic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/gulpfile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/package2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/Bootstrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/Cabin-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Cabin/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/Dosis-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Dosis/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/FontAwesome5/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Hasklig/Hasklig.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Hasklig/Hasklig.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Hasklig/Hasklig.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Hasklig/Hasklig.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Indie_Flower/IndieFlower.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Indie_Flower/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Hairline.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-HairlineItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Lato/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Montserrat/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/Nunito-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Nunito/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/OpenSans/OpenSans.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Bold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Roboto/Roboto-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/SourceCodePro/SourceCodePro-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/AjaxView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/Content.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/ErrorBoundary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/GraphView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/Messages.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/debugbar/DebugBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/debugbar/Toolbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/debugbar/ToolbarItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/debugbar/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/components/github/GithubRepo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/declarations.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/decorators.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/globals.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/icon.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/layouts/DefaultLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/api/github-api-types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/api/github-api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/api/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/api/pyro-api-types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/api/pyro-api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/containerModule.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/logic/ioc.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/Menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/MenuStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/DefaultLinkType.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/LinkType.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/PageLinkType.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/SubmenuLinkType.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/UrlLinkType.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/menus/link-types/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/pages/PageComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/pages/PageStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/pages/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/pages/interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/posts/PostStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/posts/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/modules/users/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/stores/RootStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/stores/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/antd/_ide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/antd/_material-colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/antd/antd.variables.example.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/antd/material-colors.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/antd/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/scss/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/Theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/ThemeManager.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/baseTheme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/colors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/defaultTheme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/helpers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/styles/themes/interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/Context.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/breakpoints.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/colors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/general.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/md5.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/mixins.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/platform.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/promise.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/src/utils/storage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/tsconfig.webpack.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/react-site/webpack.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools-webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools-webpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/Directory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/DirectoryArray.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/FSItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/File.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/FileArray.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/factories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/src/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fs/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fs/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reset-evals/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reset-evals/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/src/MyStyledComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/src/MyStyledComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/src/MyThemeStyledComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/src/MyThemeStyledComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/src/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/src/globals.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/src/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/src/theme.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/components.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/examples/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/elements.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/elements.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/theme-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/theme-styled.ts_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typestyled-components/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typestyled-components/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <list id="f38a77f6-1238-4366-bfa7-1845aecab1af" name="added testing setup and updated all dependencies" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,126 +335,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/hoc.tsx">
+        <entry file="file://$PROJECT_DIR$/packages/commando/lib/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/demo/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/elements.ts">
+        <entry file="file://$PROJECT_DIR$/packages/commando/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
-              <caret line="21" column="92" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="702">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts">
+        <entry file="file://$PROJECT_DIR$/packages/commando/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="216">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10584">
-              <caret line="472" column="14" selection-start-line="472" selection-start-column="14" selection-end-line="472" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1134" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/gulpfile.ts">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/types.ts">
+        <entry file="file://$PROJECT_DIR$/apps/demo/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="4" selection-end-column="14" />
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/helpers.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/index.d.ts">
+        <entry file="file://$PROJECT_DIR$/packages/commando/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+        <entry file="file://$PROJECT_DIR$/packages/reset-evals/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64557">
-              <caret line="2418" column="4" selection-start-line="2418" selection-start-column="4" selection-end-line="2418" selection-end-column="4" />
+            <state relative-caret-position="459">
+              <caret line="17" selection-start-line="17" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/node_modules/react-scripts/lib/react-app.d.ts">
+        <entry file="file://$PROJECT_DIR$/packages/commando/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="31" column="24" selection-end-line="59" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="567">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/.gitignore">
+        <entry file="file://$PROJECT_DIR$/packages/reset-evals/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="78" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reset-evals/.npmignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/commando/lib/index.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -141,45 +444,92 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/packages/reset-evals/lib/ResetEvals.d.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/test/example.test.ts">
+        <entry file="file://$PROJECT_DIR$/packages/reset-evals/lib/index.d.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/yarn.lock">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json">
+        <entry file="file://$PROJECT_DIR$/packages/fs/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="351">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/package.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/fs/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="432">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/fs/lib/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/at-radic.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="23" column="108" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/scopes/tsc.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/deployment.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classNames</find>
-      <find>classNames(</find>
-      <find>PropTypes</find>
       <find>Theme</find>
       <find>react-ty</find>
       <find>Fork</find>
@@ -196,14 +546,32 @@
       <find>PackageInfo</find>
       <find>react-d</find>
       <find>react</find>
+      <find>jsdom</find>
+      <find>Assert</find>
+      <find>expect</find>
+      <find>snapshot</find>
+      <find>snap</find>
+      <find>mocha</find>
+      <find>file</find>
+      <find>mochaContext</find>
+      <find>TestF</find>
+      <find>require</find>
+      <find>cross</find>
+      <find>Directory</find>
+      <find>encoding</find>
+      <find>src</find>
     </findStrings>
     <replaceStrings>
       <replace>declare</replace>
       <replace>this.log</replace>
       <replace>Package</replace>
+      <replace>ctx</replace>
+      <replace>File</replace>
+      <replace>lib</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/packages/typestyled-components/src</dir>
+      <dir>$PROJECT_DIR$/packages/util/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -229,64 +597,75 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/node/index.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/index.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/gulp/templates/gulpfile.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/lib/Generator.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/webpack.gulpfile.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates/.env" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/package.json" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/app/index.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-gulp/package.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/dist/index.d.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/index.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools/package.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/package.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/utils.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/index.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/getVersionBumpChoices.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Package.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-monorepo/src/Monorepo.ts" />
-        <option value="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/index.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/minify.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools/tsconfig.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/getProcessForPort.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-webpack/src/tasks/serve.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools-webpack/tsconfig.json" />
-        <option value="$PROJECT_DIR$/packages/build-tools-webpack/src/config/presets.ts" />
-        <option value="$PROJECT_DIR$/packages/build-tools/src/utils/choosePort.ts" />
-        <option value="$PROJECT_DIR$/gulpfile.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/.gitignore" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/test/_support/ts-node.js" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/types/globals.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/snap-shot-core/src/file-system.js" />
         <option value="$PROJECT_DIR$/packages/typestyled-components/test/setup.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/package.json" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/test/tsconfig.json" />
         <option value="$PROJECT_DIR$/packages/typestyled-components/test/mocha.opts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/test/example.test.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/examples/package.json" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/package.json" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/index.tsx" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/App.tsx" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/theme.tsx" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/SimpleThemedComponent.tsx" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/globals.d.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/MyThemeStyledComponent.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/test/_support/BaseClass.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/types/globals.d.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/test/_support/chai-snapshot.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/test/_support/setup.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/test/helpers.test.tsx" />
         <option value="$PROJECT_DIR$/packages/typestyled-components/src/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/package.json" />
         <option value="$PROJECT_DIR$/packages/typestyled-components/src/types.ts" />
-        <option value="$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/elements.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/test/factory.test.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/extend.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/hoc.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/index.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/globals.d.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/MyThemeStyledComponent.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/theme.tsx" />
         <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/MyStyledComponent.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/example/src/App.tsx" />
+        <option value="$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx" />
+        <option value="$PROJECT_DIR$/packages/build-tools-webpack/src/config/init.ts" />
+        <option value="$PROJECT_DIR$/packages/cli/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/cli/package.json" />
+        <option value="$PROJECT_DIR$/test.ts" />
+        <option value="$PROJECT_DIR$/packages/commando/README.md" />
+        <option value="$PROJECT_DIR$/packages/commando/src/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/commando/.npmignore" />
+        <option value="$PROJECT_DIR$/apps/demo/package.json" />
+        <option value="$PROJECT_DIR$/apps/demo/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/commando/src/index.ts" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/src/ResetEvals.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/.npmignore" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/src/cli.ts" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/.gitignore" />
+        <option value="$PROJECT_DIR$/packages/commando/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/commando/.gitignore" />
+        <option value="$PROJECT_DIR$/packages/reset-evals/package.json" />
+        <option value="$PROJECT_DIR$/packages/commando/package.json" />
+        <option value="$PROJECT_DIR$/packages/commando/lib/index.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/fs/tsconfig.json" />
+        <option value="$PROJECT_DIR$/packages/fs/package.json" />
+        <option value="$PROJECT_DIR$/.idea/at-radic.iml" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/index.ts" />
+        <option value="$PROJECT_DIR$/apps/demo/src/index.ts" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
       <scroll-view-position x="0" y="0" />
     </layout>
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="tsc" />
+    </order>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1599" />
@@ -312,13 +691,114 @@
             <path>
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="runConfigurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="scopes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@radic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@radic" type="462c0819:PsiDirectoryNode" />
+              <item name="fs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@radic" type="462c0819:PsiDirectoryNode" />
+              <item name="reset-evals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
               <item name="at-radic" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="typestyled-components" type="462c0819:PsiDirectoryNode" />
+              <item name="commando" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="commando" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="commando" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="index.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="fs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="fs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reset-evals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="at-radic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="at-radic" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reset-evals" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -380,6 +860,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
@@ -387,10 +868,12 @@
     <property name="android.sdk.path" value="$ANDROID_HOME$" />
     <property name="javascript.nodejs.core.library.configured.version" value="9.11.2" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/added_testing_setup_and_updated_all_dependencies.patch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/typestyled-components/test/root.test.tsx" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -400,19 +883,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/yarn.txt" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/typestyled-components/example/src" />
-      <recent name="$PROJECT_DIR$/packages/typestyled-components" />
-      <recent name="$PROJECT_DIR$/packages/typestyled-components/test" />
-      <recent name="$PROJECT_DIR$/packages/generator-radic/src/generators/build-tools/templates" />
-      <recent name="$PROJECT_DIR$/packages/generator-radic/src/generators" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/commando" />
+      <recent name="$PROJECT_DIR$/packages/typestyled-components/test/_support" />
+      <recent name="$PROJECT_DIR$/packages/util/src" />
       <recent name="$PROJECT_DIR$/packages/typestyled-components/test" />
       <recent name="$PROJECT_DIR$/packages" />
-      <recent name="$PROJECT_DIR$/packages/generator-radic/src" />
-      <recent name="$PROJECT_DIR$/packages/build-tools-webpack/src/utils" />
-      <recent name="$PROJECT_DIR$/packages/build-tools-gulp/src/decorators" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/demo" />
+      <recent name="$PROJECT_DIR$/packages/commando" />
+      <recent name="$PROJECT_DIR$/packages/commando/src" />
+      <recent name="$PROJECT_DIR$/packages/typestyled-components/test/_support" />
+      <recent name="$PROJECT_DIR$/packages/fs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,7 +910,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.gulp watch">
+  <component name="RunManager" selected="Node.js.test.ts">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -445,18 +928,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/at-radic/packages/typestyled-components/coverage/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/at-radic/packages/typestyled-components/coverage/lcov-report/index.html">
+      <method v="2" />
+    </configuration>
     <configuration name="gulp publish" type="NodeJSConfigurationType" application-parameters="publish" node-parameters="-r ts-node/register --nolazy" path-to-js-file="node_modules/.bin/gulp" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/packages/fs/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/typestyled-components/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner">
+      <node-interpreter>project</node-interpreter>
+      <node-options>-r ts-node/register --nolazy</node-options>
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="NODE_ENV" value="test" />
+      </envs>
+      <ui>mocha-typescript</ui>
+      <extra-mocha-options>--opts ./test/mocha.opts</extra-mocha-options>
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory>test/**/*.test.+(ts|tsx|js)</test-directory>
+      <recursive>false</recursive>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="Mocha.test/**/*.test.+(ts|tsx|js)" />
+      <item itemvalue="Mocha.test/root.test.tsx" />
       <item itemvalue="Node.js.demo-build-tools gulp prod:build" />
       <item itemvalue="Node.js.gulp test" />
       <item itemvalue="Node.js.gulp publish" />
       <item itemvalue="Node.js.gulp pick" />
       <item itemvalue="Node.js.gulp watch" />
+      <item itemvalue="Node.js.test" />
+      <item itemvalue="Node.js.r" />
       <item itemvalue="Node.js.generator-radic test.ts" />
+      <item itemvalue="Node.js.test.ts" />
       <item itemvalue="Node.js.react-site gulp dev:build" />
+      <item itemvalue="Node.js.test.js" />
+      <item itemvalue="npm.test" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -487,30 +1022,112 @@
       <option name="project" value="LOCAL" />
       <updated>1543102176875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="testing works now with react components">
+      <created>1543106076822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543106076822</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Testing env now working">
+      <created>1543114154793</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543114154793</updated>
+    </task>
+    <task id="LOCAL-00006" summary="upds">
+      <created>1543154345020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543154345020</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add @radic/fs">
+      <created>1543176508875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543176508875</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testing with snapshots">
+      <created>1543184207614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543184207614</updated>
+    </task>
+    <task id="LOCAL-00009" summary="@radic/fs updates">
+      <created>1543184261294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543184261294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed dirs">
+      <created>1545673424518</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545673424518</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 21h 42m 46s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 21h 43m 41s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 21h 44m 18s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 02m 13s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 03m 03s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 03m 30s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 03m 37s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 03m 51s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 04m 10s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test______test_+(ts_tsx_js) - 2018.11.25 at 22h 20m 42s.xml">
+      <configuration name="test/**/*.test.+(ts|tsx|js)" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1599" y="34" width="3842" height="2089" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.15524513" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.1402214" />
       <window_info id="Structure" order="1" sideWeight="0.5003791" side_tool="true" weight="0.14654718" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973643" weight="0.32977098" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841857" weight="0.3299389" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49920928" weight="0.32977098" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4960464" weight="0.32620865" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" />
       <window_info anchor="bottom" id="GraphQL" order="7" sideWeight="0.49973643" visible="true" weight="0.3299389" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.5044808" side_tool="true" visible="true" weight="0.3043257" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49551925" visible="true" weight="0.3043257" />
+      <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.5079072" side_tool="true" visible="true" weight="0.18829517" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4920928" visible="true" weight="0.18829517" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4989457" weight="0.32926208" />
-      <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="13" sideWeight="0.49578282" weight="0.32739308" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49815497" weight="0.32926208" />
+      <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="13" sideWeight="0.4947285" weight="0.3033079" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -519,24 +1136,25 @@
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.1544544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.15611814" />
       <window_info id="Structure" order="1" sideWeight="0.5003791" side_tool="true" weight="0.14654718" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973643" weight="0.32977098" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841857" weight="0.3299389" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Docker" order="6" />
-      <window_info anchor="bottom" id="GraphQL" order="7" sideWeight="0.49973643" visible="true" weight="0.3299389" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.5002636" side_tool="true" weight="0.32977098" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49261993" visible="true" weight="0.3043257" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32943568" />
-      <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="13" sideWeight="0.49578282" weight="0.32739308" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49920928" weight="0.32977098" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4960464" weight="0.32620865" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="GraphQL" order="8" sideWeight="0.49973643" visible="true" weight="0.3299389" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.5071165" side_tool="true" weight="0.34452927" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4928835" visible="true" weight="0.3447047" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49868214" weight="0.32926208" />
+      <window_info anchor="bottom" x="2574" y="1078" width="1891" height="710" id="Debug" order="14" sideWeight="0.4947285" weight="0.3043257" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -549,9 +1167,43 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/node_modules/mocha-typescript/index.d.ts" />
         <option value="$PROJECT_DIR$/../docit-monorepo/node_modules/mocha-typescript/index.d.ts" />
         <option value="$PROJECT_DIR$/../docit-monorepo/node_modules/mocha-typescript/index.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/mocha-typescript/index.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/mocha-typescript/index.js" />
+        <option value="$PROJECT_DIR$/packages/commando/lib/index.js" />
+        <option value="$PROJECT_DIR$/packages/commando/lib/index.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FileArray.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/utils.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/DirectoryArray.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/utils.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/DirectoryArray.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/File.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FSItem.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/index.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/factories.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FSItem.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FileArray.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/index.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/factories.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/utils.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/File.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/Directory.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/Directory.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/DirectoryArray.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/factories.d.ts" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/Directory.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FSItem.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/FileArray.js.map" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/File.js" />
+        <option value="$PROJECT_DIR$/packages/fs/lib/index.js.map" />
       </list>
+    </option>
+    <option name="includedJSSourcePackages">
+      <set>
+        <option value="@radic/fs" />
+      </set>
     </option>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -605,18 +1257,38 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
     <MESSAGE value="added testing setup and updated all dependencies" />
     <MESSAGE value="added example init setup" />
     <MESSAGE value="type madness" />
-    <option name="LAST_COMMIT_MESSAGE" value="type madness" />
+    <MESSAGE value="testing works now with react components" />
+    <MESSAGE value="Testing env now working" />
+    <MESSAGE value="upds" />
+    <MESSAGE value="add @radic/fs" />
+    <MESSAGE value="testing with snapshots" />
+    <MESSAGE value="@radic/fs updates" />
+    <MESSAGE value="changed dirs" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed dirs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/apps/react-site/gulpfile.ts</url>
-          <line>43</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/node_modules/snap-shot-core/src/index.js</url>
+          <line>165</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/snap-shot-core/src/index.js</url>
+          <line>202</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/cli/src/lib/commands/r-pmove.ts</url>
+          <line>16</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -624,351 +1296,313 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>chain.toString()</expression-string>
+        <expression-string>fromCurrentFolder()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>context</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>chain.toConfig()</expression-string>
+        <expression-string>__mocha_context__</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.webpack.config</expression-string>
+        <expression-string>window.__mocha_context__</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>require('react')</expression-string>
+        <expression-string>global.__mocha_context__</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>require('react-hot-loader')</expression-string>
+        <expression-string>snapshotState.</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>require('fs-extra')</expression-string>
+        <expression-string>result.report()</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>require('babel-polyfill')</expression-string>
+        <expression-string>result.message()</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>global.module</expression-string>
-        <language-id>TypeScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>global.require('babel-polyfill')</expression-string>
-        <language-id>TypeScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>global</expression-string>
+        <expression-string>result</expression-string>
         <language-id>TypeScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="1360" column="5" selection-start-line="1360" selection-start-column="5" selection-end-line="1360" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/serviceWorker.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/styled.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/extend.d.ts">
+    <entry file="file://$PROJECT_DIR$/packages/fs/dist/index.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-typestyle/internal/utils.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+    <entry file="file://$PROJECT_DIR$/builds/build-tools/package.json" />
+    <entry file="file://$PROJECT_DIR$/packages/fs/.npmignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/fs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-typestyle/internal/cache.d.ts">
+    <entry file="file://$PROJECT_DIR$/builds/fs/.npmignore" />
+    <entry file="file://$PROJECT_DIR$/builds/fs/package.json" />
+    <entry file="file://$PROJECT_DIR$/test.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="378">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/init.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/styled.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/extend.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-typestyle/node_modules/free-style/dist/free-style.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1438">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-typestyle/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/packages/cli/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-typestyle/types.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+    <entry file="file://$PROJECT_DIR$/packages/commando/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="243">
+            <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typestyle/lib/types.d.ts">
+    <entry file="file://$PROJECT_DIR$/packages/commando/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="n#!!doc;n#&amp;&gt;*#0;n#!!block;n#NestedCSSSelectors#0" expanded="true" />
-            <element signature="n#!!doc;n#@media screen and (min-width: 700px)#0;n#!!block;n#NestedCSSSelectors#0" expanded="true" />
+            <element signature="e#160#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/theme.tsx">
+    <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="216">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/demo-build-tools/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/demo/README.md" />
+    <entry file="file://$PROJECT_DIR$/packages/cli/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/src/ResetEvals.ts" />
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/dist/ResetEvals.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/src/cli.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/src/cli.ts" />
+    <entry file="file://$PROJECT_DIR$/apps/demo/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/demo/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rimraf/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-189">
+            <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" selection-start-line="17" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/lib/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/commando/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/fs/src/index.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/StyledDecorator.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10584">
-          <caret line="472" column="14" selection-start-line="472" selection-start-column="14" selection-end-line="472" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/types.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typestyle/src/types.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64557">
-          <caret line="2418" column="4" selection-start-line="2418" selection-start-column="4" selection-end-line="2418" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/dist/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/helpers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/node_modules/rollup/dist/rollup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="3459" column="29" selection-start-line="3459" selection-start-column="29" selection-end-line="3459" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/gulpfile.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/MyThemeStyledComponent.tsx" />
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/theme.tsx" />
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/SimpleThemedComponent.tsx" />
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/factory.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/elements.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="92" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/react-app-env.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/hoc.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/MyStyledComponent.tsx" />
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/src/globals.d.ts" />
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/node_modules/react-scripts/lib/react-app.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="31" column="24" selection-end-line="59" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/types.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/StyledDecorator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upd_pre_type_madness.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/.gitignore">
+    <entry file="file://$PROJECT_DIR$/packages/commando/lib/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/lib/ResetEvals.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/test/example.test.ts">
+    <entry file="file://$PROJECT_DIR$/packages/reset-evals/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/src/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/packages/fs/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="432">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/apps/demo/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="27">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/typestyled-components/example/package.json">
+    <entry file="file://$PROJECT_DIR$/packages/fs/lib/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upd.patch">
+    <entry file="file://$PROJECT_DIR$/packages/fs/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/deployment.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/tsc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/at-radic.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="108" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/demo/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -1043,6 +1677,21 @@
               </list>
             </option>
           </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>tsc</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="tsc" />
+          </order>
         </settings>
       </state>
     </states>

@@ -1,5 +1,7 @@
+///<reference path="globals.d.ts"/>
+
 import React from 'react';
-import { Styled } from 'typestyled-components';
+import { CSS, Styled } from 'typestyled-components';
 
 const foobar = {
     border: '1px solid red',
@@ -8,16 +10,15 @@ const foobar = {
 }
 
 @Styled()
-export class MyThemeStyledComponent extends React.Component<Partial<Styled.StylableProps>> {
-    props: Partial<Styled.StylableProps>;
+export class MyThemeStyledComponent extends React.Component<Styled.StylableProps> {
 
     //: Record<string, FactoryStyles<{}, Theme>>
     static styles = {
-        foo: ({ theme }) => ({
-            ...foobar,
-            background: theme.backgroundColor,
-            color     : 'blue'
-        }),
+        // foo: (theme) => ({
+        //     ...foobar,
+        //     background: theme.backgroundColor,
+        //     color     : 'blue'
+        // }),
         bar: {
             ...foobar,
             background: '#AAA',

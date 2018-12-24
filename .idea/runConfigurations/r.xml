@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="r" type="NodeJSConfigurationType" application-parameters="pmove $PROJECT_DIR$/../../downloads/completed $PROJECT_DIR$/../../sorted/9999h" path-to-js-file="bin/r.js" working-dir="$PROJECT_DIR$/packages/cli">
+    <method v="2" />
+  </configuration>
+</component>

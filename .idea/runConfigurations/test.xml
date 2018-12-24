@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test" type="NodeJSConfigurationType" singleton="false" application-parameters="--opts ./test/mocha.opts \&quot;src/**/__tests__/**/*.test.+(ts|tsx|js)\&quot; \&quot;test/**/*.test.+(ts|tsx|js)\&quot; \&quot;test/*.test.+(ts|tsx|js)\&quot;" node-parameters="-r ts-node/register --nolazy" path-to-js-file="node_modules/.bin/mocha" working-dir="$PROJECT_DIR$/packages/typestyled-components">
+    <method v="2" />
+  </configuration>
+</component>

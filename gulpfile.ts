@@ -46,7 +46,7 @@ export class Gulpfile {
 
     @Task('version') version() { return this.versionPackages()}
 
-    @Task('test') test() { return this.testPackages()}
+    @Task('tests') tests() { return this.testPackages()}
 
     @Task('pick')
     @Task('default')

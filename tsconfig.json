@@ -16,12 +16,14 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "sourceMap": true,
-        "allowJs": true,
         "jsx": "react"
     },
     "include": [
         //        "packages",
         "gulpfile.ts",
         "test.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

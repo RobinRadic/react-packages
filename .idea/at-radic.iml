@@ -13,18 +13,32 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/generator-radic/src" isTestSource="false" packagePrefix="generator-radic" />
       <sourceFolder url="file://$MODULE_DIR$/apps/react-site/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/src" isTestSource="false" packagePrefix="@radic/build-tools-monorepo" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/reset-evals/src" isTestSource="false" packagePrefix="@radic/reset-evals" />
       <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/src" isTestSource="false" packagePrefix="@radic/console-colors" />
       <sourceFolder url="file://$MODULE_DIR$/packages/console-colors/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/packages/typestyled-components/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/util/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/util/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/console/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/console/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/cli/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/fs/lib" isTestSource="false" packagePrefix="@radic/fs" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/commando/lib" isTestSource="false" packagePrefix="@radic/commando" />
+      <sourceFolder url="file://$MODULE_DIR$/apps/demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/reset-evals/lib" isTestSource="false" packagePrefix="@radic/reset-evals" />
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/demo/dist" />
       <excludeFolder url="file://$MODULE_DIR$/apps/react-site/dev" />
+      <excludeFolder url="file://$MODULE_DIR$/builds" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-gulp/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-monorepo/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-rollup/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools-webpack/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/build-tools/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/cli/test" />
       <excludeFolder url="file://$MODULE_DIR$/packages/console-colors/.nyc_output" />
       <excludeFolder url="file://$MODULE_DIR$/packages/console-colors/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/console/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/fs/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/generators" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/lib" />
       <excludeFolder url="file://$MODULE_DIR$/packages/generator-radic/types" />
@@ -32,9 +46,12 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/test-lib/example" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/.nyc_output" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/coverage" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/dist" />
       <excludeFolder url="file://$MODULE_DIR$/packages/typestyled-components/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/util/dist" />
     </content>
+    <content url="file://$MODULE_DIR$/node_modules/@radic/reset-evals" />
     <content url="file://$MODULE_DIR$/packages/typestyled-components/examples/src" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

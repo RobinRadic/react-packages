@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test/**/*.test.+(ts|tsx|js)" type="mocha-javascript-test-runner" nameIsGenerated="true">
+    <node-interpreter>project</node-interpreter>
+    <node-options>-r ts-node/register --nolazy</node-options>
+    <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+    <working-directory>$PROJECT_DIR$/packages/typestyled-components</working-directory>
+    <pass-parent-env>true</pass-parent-env>
+    <envs>
+      <env name="NODE_ENV" value="test" />
+      <env name="DEBUG" value="snap-shot-it" />
+    </envs>
+    <ui>mocha-typescript</ui>
+    <extra-mocha-options>--opts ./test/mocha.opts</extra-mocha-options>
+    <test-kind>PATTERN</test-kind>
+    <test-pattern>test/**/*.test.+(ts|tsx|js)</test-pattern>
+    <method v="2" />
+  </configuration>
+</component>

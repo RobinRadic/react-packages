@@ -1,12 +1,23 @@
 ///<reference path="./globals.d.ts"/>
-import { createThemeProvider } from 'typestyled-components';
+import { createStyled,createThemeProvider } from 'typestyled-components';
 
-import Theme = themes.Theme;
+export interface Theme {
+    backgroundColor: string
+    header: { color: string }
+    sidebar: { color: string }
+}
 
 const defaultTheme: Theme = {
-    backgroundColor: '#AAA'
+    backgroundColor: '#00aa1d',
+    header         : {
+        color: '#ff4232'
+    },
+    sidebar        : {
+        color: '#FFF'
+    }
 }
 
 
 export type ThemeMap = Record<'default', Theme>
 export const ThemeProvider = createThemeProvider<ThemeMap>({ default: defaultTheme }, 'default')
+export const styled        = createStyled<Theme>()

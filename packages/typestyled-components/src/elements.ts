@@ -1,5 +1,6 @@
-import {  factory } from './factory';
-import { CreatedFactoryFn} from './types';
+import { factory } from './factory';
+import { CreatedFactoryFn } from './types';
+
 
 export const a: CreatedFactoryFn<HTMLAnchorElement>           = factory<HTMLAnchorElement>('a')
 export const abbr: CreatedFactoryFn<HTMLElement>              = factory<HTMLElement>('abbr')

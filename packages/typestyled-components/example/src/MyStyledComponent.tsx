@@ -1,5 +1,6 @@
 import React from 'react';
 import { Styled } from 'typestyled-components';
+// import { createStyled } from '../../src/factory';
 
 const foobar = {
     border: '1px solid red',
@@ -7,11 +8,17 @@ const foobar = {
     width : 100
 }
 
-@Styled()
-export class MyStyledComponent extends React.Component<Partial<Styled.StylableProps>> {
-    props: Partial<Styled.StylableProps>;
+export interface MyStyledComponentProps {
 
-    static styles: Styled.Styles = {
+    border?: boolean,
+    height?: number,
+    width?: number
+}
+
+@Styled()
+export class MyStyledComponent extends React.Component<Styled.StylableProps & MyStyledComponentProps> {
+
+    static styles = {
         foo: {
             ...foobar,
             background: '#AAA',
@@ -25,16 +32,14 @@ export class MyStyledComponent extends React.Component<Partial<Styled.StylablePr
     }
 
     render() {
-        const { classNames } = this.props
+        const { border, height, width } = this.props
         return (
             <div>
-                <div className={classNames.foo}>
-                    foo
-                </div>
-                <div className={classNames.bar}>
-                    bar
-                </div>
+                border: {border}<br/>
+                height: {height}<br/>
+                width: {width}<br/>
             </div>
         );
     }
 }
+
