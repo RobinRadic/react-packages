@@ -2,12 +2,12 @@
     "name": "@radic/reset-evals",
     "license": "MIT",
     "version": "1.0.1",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
-    "jsnext:main": "dist/index.es.js",
-    "typings": "dist/index.d.ts",
+    "main": "lib/index.js",
+    "module": "lib/index.ts",
+    "jsnext:main": "lib/index.ts",
+    "typings": "lib/index.d.ts",
     "bin": {
-        "reset-evals": "dist/cli.js"
+        "reset-evals": "lib/cli.js"
     },
     "scripts": {
         "clean": "rm -rf dist/ .rpt2_cache",
@@ -16,14 +16,15 @@
         "dev:build": "npm-run-all env:dev clean build",
         "prod:build": "npm-run-all env:prod clean build",
         "dev:watch": "npm-run-all env:dev clean build",
-        "build": "tsc"
+        "build": "tsc",
+        "postbuild": "chmod +x lib/cli.js"
     },
     "engines": {
         "node": ">=8",
         "npm": ">=5"
     },
     "files": [
-        "dist"
+        "lib"
     ],
     "dependencies": {
         "glob": "^7.1.3",
